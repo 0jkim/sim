@@ -196,14 +196,17 @@ void
 MyModel::SendPacketUl () // 0jkim : UL 트래픽 패킷 전송 함수
 {
   Ptr<Packet> pkt = Create<Packet> (m_packetSize, m_periodicity, m_deadline); // 0jkim : 패킷 생성
+
+  // 0jkim : IPv4 헤더 설정
   Ipv4Header ipv4Header;
   ipv4Header.SetProtocol (Ipv4L3Protocol::PROT_NUMBER);
   pkt->AddHeader (ipv4Header);
 
+  // 0jkim : 패킷 전송
   m_device->Send (pkt, m_addr, Ipv4L3Protocol::PROT_NUMBER);
   NS_LOG_INFO ("Sending UL");
 
-  if (m_packetsSent == 0)
+  if (m_packetsSent == 0) // 0jkim : 첫 번째 패킷인 경우
     {
       ScheduleTxUl_Configuration ();
       m_packetsSent = 1;
@@ -228,7 +231,7 @@ MyModel::ScheduleTxUl (uint8_t period)
 }
 
 void
-MyModel::ScheduleTxUl_Configuration (void)
+MyModel::ScheduleTxUl_Configuration (void) // 0jkim : UL 패킷 전송 스케줄링 함수
 {
   uint8_t configurationTime = 60;
   Time tNext = MilliSeconds (configurationTime);
@@ -273,21 +276,21 @@ ConnectUlPdcpRlcTraces ()
 int
 main (int argc, char *argv[])
 {
-  uint16_t numerologyBwp1 = 1;
-  uint32_t packetSize = 10;
-  double centralFrequencyBand1 = 3550e6;
-  double bandwidthBand1 = 20e6;
-  uint8_t period = uint8_t (10);
+  uint16_t numerologyBwp1 = 1; // 0jkim : Bwp1의 numerology 설정
+  uint32_t packetSize = 10; // 0jkim : 패킷 사이즈 설정
+  double centralFrequencyBand1 = 3550e6; // 0jkim : 중심 주파수 설정 35.5 GHz
+  double bandwidthBand1 = 20e6; // 0jkim : 대역폭 설정 20 MHz
+  uint8_t period = uint8_t (10); // 0jkim : 주기 설정 10 ms
 
-  uint16_t gNbNum = 1;
-  uint16_t ueNumPergNb = 40;
+  uint16_t gNbNum = 1; // 0jkim : gNB 개수 설정
+  uint16_t ueNumPergNb = 40; // 0jkim : UE 개수 설정
 
-  bool enableUl = true;
-  uint32_t nPackets = 1000;
-  Time sendPacketTime = Seconds (0.2);
-  uint8_t sch = 2;
+  bool enableUl = true; // 0jkim : UL 트래픽 활성화 여부 설정(true)
+  uint32_t nPackets = 1000; // 0jkim : 패킷 개수 설정
+  Time sendPacketTime = Seconds (0.2); // 0jkim : 패킷 전송 시간 설정
+  uint8_t sch = 1; // 5G-OFDMA 방식
 
-  delay = MicroSeconds (10);
+  delay = MicroSeconds (10); // 0jkim : 전송 시간 설정
 
   CommandLine cmd;
   cmd.AddValue ("numerologyBwp1", "The numerology to be used in bandwidth part 1", numerologyBwp1);
@@ -299,31 +302,35 @@ main (int argc, char *argv[])
   cmd.AddValue ("scheduler", "Scheduler", sch);
   cmd.Parse (argc, argv);
 
-  std::vector<uint32_t> v_init (ueNumPergNb);
-  std::vector<uint32_t> v_period (ueNumPergNb);
-  std::vector<uint32_t> v_deadline (ueNumPergNb);
-  std::vector<uint32_t> v_packet (ueNumPergNb);
+  std::vector<uint32_t> v_init (ueNumPergNb); // 0jkim :gNB에 연결된 UE의 초기 지연 시간 벡터 선언
+  std::vector<uint32_t> v_period (ueNumPergNb); // 0jkim : gNB에 연결된 UE의 주기 벡터 선언
+  std::vector<uint32_t> v_deadline (ueNumPergNb); // 0jkim : gNB에 연결된 UE의 마감 시간 벡터 선언
+  std::vector<uint32_t> v_packet (ueNumPergNb); // 0jkim : gNB에 연결된 UE의 패킷 크기 벡터 선언
 
   std::cout << "\n Init values: " << '\n';
-  v_init = std::vector<uint32_t> (ueNumPergNb, {100000});
-  for (int val : v_init)
+  v_init = std::vector<uint32_t> (ueNumPergNb,
+                                  {100000}); // 0jkim : gNB에 연결된 UE의 초기 지연 시간 벡터 설정
+  for (int val : v_init) // 0jkim : 벡터 출력
     std::cout << val << std::endl;
 
   std::cout << "Deadline values: " << '\n';
-  v_deadline = std::vector<uint32_t> (ueNumPergNb, {10000000});
-  for (int val : v_deadline)
+  v_deadline = std::vector<uint32_t> (ueNumPergNb,
+                                      {10000000}); // 0jkim : gNB에 연결된 UE의 마감 시간 벡터 설정
+  for (int val : v_deadline) // 0jkim : 벡터 출력
     std::cout << val << std::endl;
 
   std::cout << "Packet values: " << '\n';
-  v_packet = std::vector<uint32_t> (ueNumPergNb, {packetSize});
-  for (int val : v_packet)
+  v_packet = std::vector<uint32_t> (ueNumPergNb,
+                                    {packetSize}); // 0jkim : gNB에 연결된 UE의 패킷 크기 벡터 설정
+  for (int val : v_packet) // 0jkim : 벡터 출력
     std::cout << val << std::endl;
 
   std::cout << "Period values: " << '\n';
-  v_period = std::vector<uint32_t> (ueNumPergNb, {10});
-  for (int val : v_period)
+  v_period = std::vector<uint32_t> (ueNumPergNb, {10}); // 0jkim : gNB에 연결된 UE의 주기 벡터 설정
+  for (int val : v_period) // 0jkim : 벡터 출력
     std::cout << val << "\t";
 
+  // 0jkim : 파일 생성해서 시나리오를 저장하는 부분
   m_ScenarioFile.open ("Scenario.txt", std::ofstream::out | std::ofstream::trunc);
 
   std::ostream_iterator<std::uint32_t> output_iterator (m_ScenarioFile, "\n");
@@ -337,10 +344,12 @@ main (int argc, char *argv[])
   m_ScenarioFile << std::endl;
   std::copy (v_period.begin (), v_period.end (), output_iterator);
   m_ScenarioFile << std::endl;
+  // 0jkim : 파일 생성 끝
 
-  int64_t randomStream = 1;
+  int64_t randomStream = 1; // 0jkim : 랜덤 스트림 설정(추후 변경)
 
-  //Create the scenario
+  // 0jkim : 네트워크 토폴로지를 구성하는 부분
+  // Create the scenario
   GridScenarioHelper gridScenario;
   gridScenario.SetRows (1);
   gridScenario.SetColumns (gNbNum);
@@ -354,13 +363,15 @@ main (int argc, char *argv[])
   gridScenario.SetUtNumber (ueNumPergNb * gNbNum);
   gridScenario.SetScenarioHeight (10);
   gridScenario.SetScenarioLength (10);
-  randomStream += gridScenario.AssignStreams (randomStream);
-  gridScenario.CreateScenario ();
+  randomStream += gridScenario.AssignStreams (randomStream); // 0jkim : 랜덤 스트림 할당
+  gridScenario.CreateScenario (); // 0jkim : 시나리오 생성
 
-  Ptr<NrPointToPointEpcHelper> epcHelper = CreateObject<NrPointToPointEpcHelper> ();
-  Ptr<IdealBeamformingHelper> idealBeamformingHelper = CreateObject<IdealBeamformingHelper> ();
-  Ptr<NrHelper> nrHelper = CreateObject<NrHelper> ();
-  nrHelper->SetBeamformingHelper (idealBeamformingHelper);
+  Ptr<NrPointToPointEpcHelper> epcHelper =
+      CreateObject<NrPointToPointEpcHelper> (); // 0jkim : epchelper 객체 생성
+  Ptr<IdealBeamformingHelper> idealBeamformingHelper =
+      CreateObject<IdealBeamformingHelper> (); // 0jkim : idealbeamforminghelper 객체 생성
+  Ptr<NrHelper> nrHelper = CreateObject<NrHelper> (); // 0jkim : nrhelper 객체 생성
+  nrHelper->SetBeamformingHelper (idealBeamformingHelper); // 0jkim : beamforminghelper 설정
 
   // Scheduler type: configured grant or grant based
   /* false -> grant based : true -> configured grant */
@@ -372,7 +383,7 @@ main (int argc, char *argv[])
   nrHelper->SetGnbMacAttribute ("CG", BooleanValue (scheduler_CG));
   nrHelper->SetGnbPhyAttribute ("CG", BooleanValue (scheduler_CG));
 
-  if (scheduler_CG)
+  if (scheduler_CG) // grant free 방식
     {
       //Configuration time
       // UE
@@ -382,27 +393,29 @@ main (int argc, char *argv[])
       nrHelper->SetGnbMacAttribute ("ConfigurationTime", UintegerValue (configurationTime));
       nrHelper->SetGnbPhyAttribute ("ConfigurationTime", UintegerValue (configurationTime));
     }
-  else
+  else // grant based 방식
     {
       nrHelper->SetSchedulerAttribute ("CG", BooleanValue (scheduler_CG));
     }
 
   nrHelper->SetEpcHelper (epcHelper);
 
-  //Disable the SRS
+  // Disable the SRS
   nrHelper->SetSchedulerAttribute ("SrsSymbols", UintegerValue (0));
 
-  //Add the desired flexible pattern (the needed DL DATA symbols (default 0))
+  // Add the desired flexible pattern (the needed DL DATA symbols (default 0))
   nrHelper->SetSchedulerAttribute ("DlDataSymbolsFpattern", UintegerValue (0)); //symStart - 1
 
   // enable or disable HARQ retransmissions
+  // 0jkim : HARQ 재전송 활성화 여부 설정 (현재 False)
   nrHelper->SetSchedulerAttribute ("EnableHarqReTx", BooleanValue (false));
   Config::SetDefault ("ns3::NrHelper::HarqEnabled", BooleanValue (false));
 
   // Select scheduler
   if (sch != 0)
     {
-      nrHelper->SetSchedulerTypeId (NrMacSchedulerOfdmaRR::GetTypeId ());
+      nrHelper->SetSchedulerTypeId (
+          NrMacSchedulerOfdmaRR::GetTypeId ()); // 이곳에서 스케줄러 타입 설정
       nrHelper->SetSchedulerAttribute ("schOFDMA", UintegerValue (sch)); // sch = 0 for TDMA
           // 1 for 5GL-OFDMA
           // 2 for Sym-OFDMA
@@ -410,25 +423,35 @@ main (int argc, char *argv[])
     }
 
   // Create one operational band containing one CC with one bandwidth part
-  BandwidthPartInfoPtrVector allBwps;
-  CcBwpCreator ccBwpCreator;
-  const uint8_t numCcPerBand = 1;
+  // 0jkim : 주파수 구조를 설정하는 부분 (하나의 주파수 대역에 하나의 CC와 하나의 대역폭 파트가 있음)
+  BandwidthPartInfoPtrVector allBwps; // 0jkim : 모든 대역폭 파트 정보를 저장하는 벡터 선언
+  CcBwpCreator
+      ccBwpCreator; // 0jkim : ccBwpCreator 객체를 선언해서 CC 및 대역폭 파트를 생성하는 데 사용
+  const uint8_t numCcPerBand = 1; // 0jkim : 각 주파수 대역(Band)당 사용할 CC의 수 설정
 
-  CcBwpCreator::SimpleOperationBandConf bandConf1 (
-      centralFrequencyBand1, bandwidthBand1, numCcPerBand, BandwidthPartInfo::InH_OfficeOpen_nLoS);
+  // 0jkim : 간단한 주파수 운영 대역 생성(대역의 중심 주파수, 대역의 전체 대역폭, CC의 수, 시나리오(스마트 시티 도시환경))
+  CcBwpCreator::SimpleOperationBandConf bandConf1 (centralFrequencyBand1, bandwidthBand1,
+                                                   numCcPerBand,
+                                                   BandwidthPartInfo::UMi_StreetCanyon_nLoS);
 
-  // By using the configuration created, it is time to make the operation band
+  // 0jkim : 생성한 구성을 사용하여 운영 대역 생성
   OperationBandInfo band1 = ccBwpCreator.CreateOperationBandContiguousCc (bandConf1);
 
+  // 0jkim : 채널 모델 업데이트 주기 설정(동적인 채널 모델을 위해 추후 변경)
   Config::SetDefault ("ns3::ThreeGppChannelModel::UpdatePeriod", TimeValue (MilliSeconds (0)));
-  nrHelper->SetSchedulerAttribute ("FixedMcsDl", BooleanValue (true));
-  nrHelper->SetSchedulerAttribute ("StartingMcsDl", UintegerValue (4));
 
-  // For CG it has to be true
-  nrHelper->SetSchedulerAttribute ("FixedMcsUl", BooleanValue (true));
-  nrHelper->SetSchedulerAttribute ("StartingMcsUl", UintegerValue (12));
+  // 0jkim : 하향링크 스케줄러와 하향링크 채널모델 추가 설정
+  nrHelper->SetSchedulerAttribute ("FixedMcsDl",
+                                   BooleanValue (true)); // MCS 타입을 설정(고정 or 가변)
+  nrHelper->SetSchedulerAttribute ("StartingMcsDl", UintegerValue (4)); // 초기 MCS 값 설정
 
-  nrHelper->SetChannelConditionModelAttribute ("UpdatePeriod", TimeValue (MilliSeconds (0)));
+  // 0jkim : 상향링크 스케줄러와 상향링크 채널모델 추가 설정
+  nrHelper->SetSchedulerAttribute ("FixedMcsUl",
+                                   BooleanValue (true)); // MCS 타입을 설정(고정 or 가변)
+  nrHelper->SetSchedulerAttribute ("StartingMcsUl", UintegerValue (12)); // 초기 MCS 값 설정
+
+  // 0jkim : 채널 상태 모델의 업데이트 주기를 설정함(0으로 설정하면 채널 상태 모델이 업데이트되지 않음)
+  nrHelper->SetChannelConditionModelAttribute ("UpdatePeriod", TimeValue (MilliSeconds (0))); //
   nrHelper->SetPathlossAttribute ("ShadowingEnabled", BooleanValue (true)); //false
 
   // Error Model: UE and GNB with same spectrum error model.
@@ -498,15 +521,20 @@ main (int argc, char *argv[])
   ueIpIface = epcHelper->AssignUeIpv4Address (NetDeviceContainer (ueNetDev));
 
   // UL traffic
-  std::vector<Ptr<MyModel>> v_modelUl;
-  v_modelUl = std::vector<Ptr<MyModel>> (ueNumPergNb, {0});
-  for (uint8_t ii = 0; ii < ueNumPergNb; ++ii)
+  std::vector<Ptr<MyModel>> v_modelUl; // 0jkim : UL 트래픽에 대한 모델 벡터 선언
+  v_modelUl = std::vector<Ptr<MyModel>> (ueNumPergNb, {0}); // 0jkim : 벡터 초기화
+  for (uint8_t ii = 0; ii < ueNumPergNb; ++ii) // 0jkim : 각 UE에 대해 반복
     {
-      Ptr<MyModel> modelUl = CreateObject<MyModel> ();
+      Ptr<MyModel> modelUl = CreateObject<MyModel> (); // 0jkim : 각 UE에 대한 MyModel 객체 생성
       modelUl->Setup (ueNetDev.Get (ii), enbNetDev.Get (0)->GetAddress (), v_packet[ii], nPackets,
-                      DataRate ("1Mbps"), v_period[ii], v_deadline[ii]);
-      v_modelUl[ii] = modelUl;
-      Simulator::Schedule (MicroSeconds (v_init[ii]), &StartApplicationUl, v_modelUl[ii]);
+                      DataRate ("1Mbps"), v_period[ii],
+                      v_deadline[ii]); // 0jkim : 각 UE에 대한 setup 함수 호출
+      v_modelUl[ii] = modelUl; // 0jkim : 설정한 모델을 벡터에 추가
+      Simulator::Schedule (
+          MicroSeconds (v_init[ii]), &StartApplicationUl,
+          v_modelUl
+              [ii]); // 0jkim : 각 UE에 대한 시작 이벤트 스케줄링, v_init[ii]는 UE의 초기 지연 시간 따라서 각 UE는 초기 지연 시간 후에 시작되고\
+               StartApplicationUl 메서드에 있는 SendPacketUl 함수가 호출됨
     }
 
   // DL traffic
