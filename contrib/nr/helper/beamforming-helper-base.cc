@@ -28,11 +28,10 @@
 #include <ns3/node.h>
 #include <ns3/nr-spectrum-phy.h>
 
-namespace ns3{
+namespace ns3 {
 
 NS_LOG_COMPONENT_DEFINE ("BeamformingHelperBase");
 NS_OBJECT_ENSURE_REGISTERED (BeamformingHelperBase);
-
 
 BeamformingHelperBase::BeamformingHelperBase ()
 {
@@ -49,23 +48,18 @@ BeamformingHelperBase::~BeamformingHelperBase ()
 TypeId
 BeamformingHelperBase::GetTypeId (void)
 {
-  static TypeId tid =
-      TypeId ("ns3::BeamformingHelperBase")
-      .SetParent<Object> ()
-      ;
+  static TypeId tid = TypeId ("ns3::BeamformingHelperBase").SetParent<Object> ();
   return tid;
 }
 
-
 void
-BeamformingHelperBase::RunTask (const Ptr<NrGnbNetDevice>& gNbDev,
-                                const Ptr<NrUeNetDevice>& ueDev,
-                                const Ptr<NrSpectrumPhy>& gnbSpectrumPhy,
-                                const Ptr<NrSpectrumPhy>& ueSpectrumPhy) const
+BeamformingHelperBase::RunTask (const Ptr<NrGnbNetDevice> &gNbDev, const Ptr<NrUeNetDevice> &ueDev,
+                                const Ptr<NrSpectrumPhy> &gnbSpectrumPhy,
+                                const Ptr<NrSpectrumPhy> &ueSpectrumPhy) const
 {
   NS_LOG_FUNCTION (this);
-  NS_LOG_INFO (" Run beamforming task for gNB:" << gNbDev->GetNode() -> GetId() <<
-                 " and UE:"<< ueDev->GetNode()->GetId () );
+  NS_LOG_INFO (" Run beamforming task for gNB:" << gNbDev->GetNode ()->GetId ()
+                                                << " and UE:" << ueDev->GetNode ()->GetId ());
   BeamformingVectorPair bfPair = GetBeamformingVectors (gnbSpectrumPhy, ueSpectrumPhy);
 
   NS_ASSERT (bfPair.first.first.size () && bfPair.second.first.size ());
@@ -75,11 +69,11 @@ BeamformingHelperBase::RunTask (const Ptr<NrGnbNetDevice>& gNbDev,
 }
 
 void
-BeamformingHelperBase::SetBeamformingAlgorithmAttribute (const std::string &n, const AttributeValue &v)
+BeamformingHelperBase::SetBeamformingAlgorithmAttribute (const std::string &n,
+                                                         const AttributeValue &v)
 {
   NS_LOG_FUNCTION (this);
   m_algorithmFactory.Set (n, v);
 }
 
-
-}
+} // namespace ns3

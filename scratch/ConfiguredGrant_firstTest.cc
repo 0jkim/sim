@@ -75,32 +75,31 @@ public:
   MyModel ();
   virtual ~MyModel ();
 
+  // 0jkim : 디바이스, 주소, 패킷 크기, 패킷 개수, 데이터 속도, 주기, 마감 시간을 설정하는 함수
   void Setup (Ptr<NetDevice> device, Address address, uint32_t packetSize, uint32_t nPackets,
               DataRate dataRate, uint8_t period, uint32_t deadline);
 
-  // DL
-  void SendPacketDl ();
-  void ScheduleTxDl ();
+  void SendPacketDl (); // 0jkim : DL 트래픽 패킷 전송 함수
+  void ScheduleTxDl (); // 0jkim : DL 패킷 전송 스케줄링 함수
 
-  // UL
-  void SendPacketUl ();
-  void ScheduleTxUl (uint8_t period);
-  void ScheduleTxUl_Configuration ();
+  void SendPacketUl (); // 0jkim : UL 트래픽 패킷 전송 함수
+  void ScheduleTxUl (uint8_t period); // 0jkim : UL 패킷 전송 스케줄링 함수
+  void ScheduleTxUl_Configuration (); // 0jkim : UL 패킷 전송 스케줄링 함수
 
 private:
-  Ptr<NetDevice> m_device;
-  Address m_addr;
-  uint32_t m_packetSize;
-  uint32_t m_nPackets;
-  DataRate m_dataRate;
-  EventId m_sendEvent;
-  bool m_running;
-  uint32_t m_packetsSent;
-  uint8_t m_periodicity;
-  uint32_t m_deadline;
+  Ptr<NetDevice> m_device; // 0jkim : 디바이스 포인터
+  Address m_addr; // 0jkim : 주소
+  uint32_t m_packetSize; // 0jkim : 패킷 크기
+  uint32_t m_nPackets; // 0jkim : 패킷 개수
+  DataRate m_dataRate; // 0jkim : 데이터 속도
+  EventId m_sendEvent; // 0jkim : 이벤트 아이디
+  bool m_running; // 0jkim : 실행 여부
+  uint32_t m_packetsSent; // 0jkim : 전송된 패킷 개수
+  uint8_t m_periodicity; // 0jkim : 주기
+  uint32_t m_deadline; // 0jkim : 마감 시간
 };
 
-MyModel::MyModel ()
+MyModel::MyModel () // 0jkim : 생성자
     : m_device (),
       m_addr (),
       m_packetSize (0),
@@ -114,13 +113,13 @@ MyModel::MyModel ()
 {
 }
 
-MyModel::~MyModel ()
+MyModel::~MyModel () // 0jkim : 소멸자
 {
 }
 
 void
 MyModel::Setup (Ptr<NetDevice> device, Address address, uint32_t packetSize, uint32_t nPackets,
-                DataRate dataRate, uint8_t period, uint32_t deadline)
+                DataRate dataRate, uint8_t period, uint32_t deadline) // 0jkim : 설정 메서드
 {
   m_device = device;
   m_packetSize = packetSize;
@@ -180,9 +179,10 @@ MyModel::ScheduleTxDl ()
 
 /*
  * This is the first event that is executed  for UL traffic.
+ * 0jkim : UL 트래픽에 대한 첫 번째 이벤트
  */
 void
-StartApplicationUl (Ptr<MyModel> model)
+StartApplicationUl (Ptr<MyModel> model) // 0jkim : UL 트래픽에 대한 시작 이벤트
 {
   model->SendPacketUl ();
 }
@@ -190,11 +190,12 @@ StartApplicationUl (Ptr<MyModel> model)
  * Function creates a single packet and directly calls the function send
  * of a device to send the packet to the destination address.
  * (UL TRAFFIC)
+ * 0jkim : 함수는 단일 패킷을 생성하고 디바이스의 send 함수를 직접 호출하여 대상 주소로 패킷을 전송합니다.
  */
 void
-MyModel::SendPacketUl ()
+MyModel::SendPacketUl () // 0jkim : UL 트래픽 패킷 전송 함수
 {
-  Ptr<Packet> pkt = Create<Packet> (m_packetSize, m_periodicity, m_deadline);
+  Ptr<Packet> pkt = Create<Packet> (m_packetSize, m_periodicity, m_deadline); // 0jkim : 패킷 생성
   Ipv4Header ipv4Header;
   ipv4Header.SetProtocol (Ipv4L3Protocol::PROT_NUMBER);
   pkt->AddHeader (ipv4Header);
