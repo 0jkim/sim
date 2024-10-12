@@ -1,3 +1,4 @@
+include(${CMAKE_SOURCE_DIR}/build-support/custom-modules/ns3-module-macros.cmake)
 set(target_prefix scratch_)
 
 function(create_scratch source_files)
@@ -6,7 +7,6 @@ function(create_scratch source_files)
   if(number_sources EQUAL 0)
     return()
   endif()
-
   # If the scratch has more than a source file, we need to find the source with
   # the main function
   set(scratch_src)
@@ -60,7 +60,11 @@ function(create_scratch source_files)
     ${scratch_name} ${scratch_directory}/ ${target_prefix}
   )
 endfunction()
-
+build_lib_example(
+  NAME ConfiguredGrant_firstTest
+  SOURCE_FILES ConfiguredGrant_firstTest.cc
+  LIBRARIES_TO_LINK ${libcore} ${libnetwork} ${libinternet} ${libmobility} ${libnr}
+)
 # Scan *.cc files in ns-3-dev/scratch and build a target for each
 file(GLOB single_source_file_scratches CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/*.cc)
 foreach(scratch_src ${single_source_file_scratches})

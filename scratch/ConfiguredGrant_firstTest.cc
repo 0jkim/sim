@@ -43,7 +43,7 @@
 #include "ns3/grid-scenario-helper.h"
 #include "ns3/log.h"
 #include "ns3/antenna-module.h"
-#include "contrib/nr/model/aoi.h" // 0jkim : AoI 클래스 포함
+#include "ns3/aoi.h" // 0jkim : AoI 클래스 포함
 
 using namespace ns3;
 
@@ -76,6 +76,19 @@ public:
   MyModel ();
   virtual ~MyModel ();
 
+  // 0jkim : AoI 관련 메서드 시작
+  void
+  SetAoI (Ptr<AoI> aoi) // 0jkim : AoI 포인터의 aoi 설정
+  {
+    m_aoi = aoi;
+  }
+  Ptr<AoI>
+  GetAoI () const // 0jkim : AoI 포인터의 aoi 반환
+  {
+    return m_aoi;
+  }
+  // 0jkim : AoI 관련 메서드 끝
+
   // 0jkim : 디바이스, 주소, 패킷 크기, 패킷 개수, 데이터 속도, 주기, 마감 시간을 설정하는 함수
   void Setup (Ptr<NetDevice> device, Address address, uint32_t packetSize, uint32_t nPackets,
               DataRate dataRate, uint8_t period, uint32_t deadline);
@@ -88,10 +101,11 @@ public:
   void ScheduleTxUl_Configuration (); // 0jkim : UL 패킷 전송 스케줄링 함수
 
 private:
+  Ptr<AoI> m_aoi; // 0jkim : AoI 포인터
   Ptr<NetDevice> m_device; // 0jkim : 디바이스 포인터
   Address m_addr; // 0jkim : 주소
   uint32_t m_packetSize; // 0jkim : 패킷 크기
-  uint32_t m_nPackets; // 0jkim : 패킷 개수
+  uint32_t m_nPackets; // 0jkim : 패킷 개수(하나의 UE당 하나의 패킷을 생성)
   DataRate m_dataRate; // 0jkim : 데이터 속도
   EventId m_sendEvent; // 0jkim : 이벤트 아이디
   bool m_running; // 0jkim : 실행 여부
