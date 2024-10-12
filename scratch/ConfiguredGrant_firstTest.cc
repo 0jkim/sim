@@ -43,6 +43,7 @@
 #include "ns3/grid-scenario-helper.h"
 #include "ns3/log.h"
 #include "ns3/antenna-module.h"
+#include "contrib/nr/model/aoi.h" // 0jkim : AoI 클래스 포함
 
 using namespace ns3;
 
@@ -286,7 +287,7 @@ main (int argc, char *argv[])
   uint16_t ueNumPergNb = 40; // 0jkim : UE 개수 설정
 
   bool enableUl = true; // 0jkim : UL 트래픽 활성화 여부 설정(true)
-  uint32_t nPackets = 1000; // 0jkim : 패킷 개수 설정
+  uint32_t nPackets = 1; // 0jkim : 패킷 개수 설정
   Time sendPacketTime = Seconds (0.2); // 0jkim : 패킷 전송 시간 설정
   uint8_t sch = 1; // 5G-OFDMA 방식
 
@@ -576,7 +577,7 @@ main (int argc, char *argv[])
       Seconds (0.16),
       &ConnectUlPdcpRlcTraces); // 0jkim : 시뮬레이션 시작 0.16초 후에 ConnectUlPdcpRlcTraces 함수 호출해서 상향링크 PDCP와 RLC 트레이스 연결
 
-  Simulator::Stop (Seconds (10)); // 0jkim : 시뮬레이션 종료 시간 설정
+  Simulator::Stop (Seconds (1)); // 0jkim : 시뮬레이션 종료 시간 설정
   Simulator::Run (); // 0jkim : 시뮬레이션 실행
 
   std::cout << "\n FIN. " << std::endl; // 0jkim : 시뮬레이션 종료 메시지 출력
