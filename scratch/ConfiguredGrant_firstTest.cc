@@ -456,71 +456,97 @@ main (int argc, char *argv[])
 
   // Error Model: UE and GNB with same spectrum error model.
   // ns3::NrEesmIrT2 (256QAM), ns3::NrEesmIrT1 (64QAM) more robust but with less througput
+  // 0jkim : 오류 모델 설정(ns3::NrEesmIrT1은 64QAM 모델, ns3::NrEesmIrT2는 256QAM 모델)
   std::string errorModel = "ns3::NrEesmIrT1";
   nrHelper->SetUlErrorModel (errorModel);
   nrHelper->SetDlErrorModel (errorModel);
 
   // Both DL and UL AMC will have the same model behind.
+  // 0jkim : AMC = Adaptive Modulation and Coding으로써 채널 조건에 따라 변조 방식과 코딩 방식을 동적으로 조절하는 기술
+  // 0jkim : 근데 위에서 MCS를 고정했기 때문에 추후에 변경 필요
   nrHelper->SetGnbDlAmcAttribute (
       "AmcModel", EnumValue (NrAmc::ErrorModel)); // NrAmc::ShannonModel or NrAmc::ErrorModel
   nrHelper->SetGnbUlAmcAttribute (
       "AmcModel", EnumValue (NrAmc::ErrorModel)); // NrAmc::ShannonModel or NrAmc::ErrorModel
 
-  bool fadingEnabled = true;
-  auto bandMask = NrHelper::INIT_PROPAGATION | NrHelper::INIT_CHANNEL;
-  if (fadingEnabled)
+  bool fadingEnabled =
+      true; // 0jkim : 페이딩 모델 활성화 여부 설정(페이딩 시 무선 신호의 강도가 시간에 따라 변화하는 현상을 모델링 하는데, 다중경로 전파나 장애물 및 이동성 등에 의해 발생)
+  auto bandMask =
+      NrHelper::INIT_PROPAGATION |
+      NrHelper::
+          INIT_CHANNEL; // 0jkim : bandmask는 비트마스크로써 초기화 시 초기화할 비트를 지정하는 데 사용
+  if (fadingEnabled) // 0jkim : 페이딩 모델 활성화 여부 확인
     {
-      bandMask |= NrHelper::INIT_FADING;
+      bandMask |= NrHelper::INIT_FADING; // 0jkim : 페이딩 모델 활성화
     }
 
-  nrHelper->InitializeOperationBand (&band1, bandMask);
-  allBwps = CcBwpCreator::GetAllBwps ({band1});
+  nrHelper->InitializeOperationBand (
+      &band1, bandMask); // 0jkim : 위에서 설정한 비트마스크를 사용하여 운영 대역 초기화
+  allBwps = CcBwpCreator::GetAllBwps (
+      {band1}); // 0jkim : band1에서 정의한 모든 CC와 그에 속한 BWP 정보를 반환해서 allBwps 벡터에 저장
 
-  // Beamforming method
+  // 0jkim : 빔포밍 방법 설정(빔포밍은 무선 신호를 특정 방향으로 조절하는 기술로, 신호의 강도와 방향을 조절하여 수신 신호의 품질을 향상시키는 기술)
   idealBeamformingHelper->SetAttribute ("BeamformingMethod",
                                         TypeIdValue (QuasiOmniDirectPathBeamforming::GetTypeId ()));
 
-  // Antennas for all the UEs
+  // 0jkim : UE의 안테나 설정
   nrHelper->SetUeAntennaAttribute ("NumRows", UintegerValue (2));
   nrHelper->SetUeAntennaAttribute ("NumColumns", UintegerValue (4));
   nrHelper->SetUeAntennaAttribute ("AntennaElement",
                                    PointerValue (CreateObject<IsotropicAntennaModel> ()));
-
-  // Antennas for all the gNbs
+  // 0jkim : UE의 안테나 배열을 2*4로 설정함 (총 8개의 안테나)
+  // 0jkim : gNB의 안테나 설정
   nrHelper->SetGnbAntennaAttribute ("NumRows", UintegerValue (4));
   nrHelper->SetGnbAntennaAttribute ("NumColumns", UintegerValue (4));
   nrHelper->SetGnbAntennaAttribute ("AntennaElement",
                                     PointerValue (CreateObject<IsotropicAntennaModel> ()));
+  // 0jkim : gNB의 안테나 배열을 4*4로 설정함 (총 16개의 안테나)
+  // UE와 gNB 모두 다중 안테나 기술(MIMO)을 사용함
 
   //Install and get the pointers to the NetDevices
-  NetDeviceContainer enbNetDev =
-      nrHelper->InstallGnbDevice (gridScenario.GetBaseStations (), allBwps);
-  NetDeviceContainer ueNetDev =
-      nrHelper->InstallUeDevice (gridScenario.GetUserTerminals (), allBwps);
+  // 0jkim : NetDevice를 설치하고 구성하는 부분
+  NetDeviceContainer enbNetDev = nrHelper->InstallGnbDevice (
+      gridScenario.GetBaseStations (),
+      allBwps); // 0jkim : gridscenario에서 정의된 모든 기지국 노드를 가져와서 기지국 디바이스를 설치하고 그 결과를 enbNetDev에 저장
+  NetDeviceContainer ueNetDev = nrHelper->InstallUeDevice (
+      gridScenario.GetUserTerminals (),
+      allBwps); // 0jkim : gridscenario에서 정의된 모든 사용자 단말 노드를 가져와서 사용자 디바이스를 설치하고 그 결과를 ueNetDev에 저장
 
-  randomStream += nrHelper->AssignStreams (enbNetDev, randomStream);
-  randomStream += nrHelper->AssignStreams (ueNetDev, randomStream);
+  randomStream += nrHelper->AssignStreams (
+      enbNetDev,
+      randomStream); // 0jkim : gNB Netdevice에 랜덤 스트림을 할당하여 스트림 인덱스 업데이트
+  randomStream += nrHelper->AssignStreams (
+      ueNetDev,
+      randomStream); // 0jkim : UE Netdevice에 랜덤 스트림을 할당하여 스트림 인덱스 업데이트
 
   // Set the attribute of the netdevice (enbNetDev.Get (0)) and bandwidth part (0)
+  // 0jkim : 네트워크 디바이스의 속성을 설정하는 부분
   nrHelper->GetGnbPhy (enbNetDev.Get (0), 0)
-      ->SetAttribute ("Numerology", UintegerValue (numerologyBwp1));
+      ->SetAttribute ("Numerology",
+                      UintegerValue (numerologyBwp1)); // 0jkim : gNB의 BWP1에 대한 numerology 설정
 
   for (auto it = enbNetDev.Begin (); it != enbNetDev.End (); ++it)
     {
-      DynamicCast<NrGnbNetDevice> (*it)->UpdateConfig ();
+      DynamicCast<NrGnbNetDevice> (*it)
+          ->UpdateConfig (); // 0jkim : 모든 gNB 네트워크 디바이스의 구성을 업데이트(위에서 설정한 numerology, 안테나 등)
     }
 
   for (auto it = ueNetDev.Begin (); it != ueNetDev.End (); ++it)
     {
-      DynamicCast<NrUeNetDevice> (*it)->UpdateConfig ();
+      DynamicCast<NrUeNetDevice> (*it)
+          ->UpdateConfig (); // 0jkim : 모든 UE 네트워크 디바이스의 구성을 업데이트(위에서 설정한 numerology, 안테나 등)
     }
 
-  InternetStackHelper internet;
-  internet.Install (gridScenario.GetUserTerminals ());
-  Ipv4InterfaceContainer ueIpIface;
-  ueIpIface = epcHelper->AssignUeIpv4Address (NetDeviceContainer (ueNetDev));
+  // 0jkim : UE에게 인터넷 프로토콜 스택을 설치하고 IP 주소를 할당하는 부분
+  InternetStackHelper internet; // 0jkim : 인터넷 스택 생성(TCP/IP 프로토콜 스택 설치)
+  internet.Install (
+      gridScenario
+          .GetUserTerminals ()); // 0jkim : gridscenario에서 모든 ue노드를 가져와서 각 UE노드에게 인터넷 프로토콜을 설치함
+  Ipv4InterfaceContainer ueIpIface; // 0jkim : UE의 IP 인터페이스 정보를 저장할 컨테이너 선언
+  ueIpIface =
+      epcHelper->AssignUeIpv4Address (NetDeviceContainer (ueNetDev)); // 0jkim : UE에게 IP 주소 할당
 
-  // UL traffic
+  // 0jkim : 상향 링크 트래픽을 다루는 부분
   std::vector<Ptr<MyModel>> v_modelUl; // 0jkim : UL 트래픽에 대한 모델 벡터 선언
   v_modelUl = std::vector<Ptr<MyModel>> (ueNumPergNb, {0}); // 0jkim : 벡터 초기화
   for (uint8_t ii = 0; ii < ueNumPergNb; ++ii) // 0jkim : 각 UE에 대해 반복
@@ -542,25 +568,28 @@ main (int argc, char *argv[])
   //modelDl -> Setup(enbNetDev.Get(0), ueNetDev.Get(0)->GetAddress(), 10, nPackets, DataRate("1Mbps"),20, uint32_t(100000));
   //Simulator::Schedule(MicroSeconds(0.099625), &StartApplicationDl, modelDl);
 
-  // attach UEs to the closest eNB
-  nrHelper->AttachToClosestEnb (ueNetDev, enbNetDev);
+  nrHelper->AttachToClosestEnb (ueNetDev,
+                                enbNetDev); // 0jkim : 각 UE를 가장 가까운 gNB에 연결하는 부분
 
-  nrHelper->EnableTraces ();
-  Simulator::Schedule (Seconds (0.16), &ConnectUlPdcpRlcTraces);
+  nrHelper->EnableTraces (); // 0jkim : 트레이스 기능 활성화
+  Simulator::Schedule (
+      Seconds (0.16),
+      &ConnectUlPdcpRlcTraces); // 0jkim : 시뮬레이션 시작 0.16초 후에 ConnectUlPdcpRlcTraces 함수 호출해서 상향링크 PDCP와 RLC 트레이스 연결
 
-  Simulator::Stop (Seconds (10));
-  Simulator::Run ();
+  Simulator::Stop (Seconds (10)); // 0jkim : 시뮬레이션 종료 시간 설정
+  Simulator::Run (); // 0jkim : 시뮬레이션 실행
 
-  std::cout << "\n FIN. " << std::endl;
+  std::cout << "\n FIN. " << std::endl; // 0jkim : 시뮬레이션 종료 메시지 출력
 
-  if (g_rxPdcpCallbackCalled && g_rxRxRlcPDUCallbackCalled)
+  if (g_rxPdcpCallbackCalled &&
+      g_rxRxRlcPDUCallbackCalled) // 0jkim : 상향링크 PDCP와 RLC 트레이스 확인해서 모두 호출되었는지 확인
     {
-      return EXIT_SUCCESS;
+      return EXIT_SUCCESS; // 0jkim : 성공 코드 반환
     }
   else
     {
-      return EXIT_FAILURE;
+      return EXIT_FAILURE; // 0jkim : 실패 코드 반환
     }
 
-  Simulator::Destroy ();
+  Simulator::Destroy (); // 0jkim : 시뮬레이션 자원 해제
 }
