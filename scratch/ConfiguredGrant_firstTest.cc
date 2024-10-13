@@ -124,7 +124,8 @@ MyModel::MyModel () // 0jkim : 생성자
       m_running (false),
       m_packetsSent (0),
       m_periodicity (0),
-      m_deadline (0)
+      m_deadline (0),
+      m_aoi (CreateObject<AoI> ()) // AoI 객체 생성 및 초기화
 {
 }
 
@@ -210,14 +211,21 @@ StartApplicationUl (Ptr<MyModel> model) // 0jkim : UL 트래픽에 대한 시작
 void
 MyModel::SendPacketUl () // 0jkim : UL 트래픽 패킷 전송 함수
 {
+  std::cout << "createpacketul test\n";
+  Time currentTime = Simulator::Now (); // 0jkim : 현재 시간을 currentTime에 저장
   Ptr<Packet> pkt = Create<Packet> (m_packetSize, m_periodicity, m_deadline); // 0jkim : 패킷 생성
+  if (m_aoi)
+    {
+      m_aoi->SetPacketCreationTime (currentTime); // 0jkim : AoI 객체에 패킷 생성 시간 설정
+      NS_LOG_INFO ("Packet created at time: " << currentTime.GetSeconds () << "s, AoI updated");
+    }
 
   // 0jkim : IPv4 헤더 설정
   Ipv4Header ipv4Header;
   ipv4Header.SetProtocol (Ipv4L3Protocol::PROT_NUMBER);
   pkt->AddHeader (ipv4Header);
 
-  // 0jkim : 패킷 전송
+  // 0jkim : 데이터 패킷을 MAC 계층으로 전송
   m_device->Send (pkt, m_addr, Ipv4L3Protocol::PROT_NUMBER);
   NS_LOG_INFO ("Sending UL");
 
@@ -298,7 +306,7 @@ main (int argc, char *argv[])
   uint8_t period = uint8_t (10); // 0jkim : 주기 설정 10 ms
 
   uint16_t gNbNum = 1; // 0jkim : gNB 개수 설정
-  uint16_t ueNumPergNb = 40; // 0jkim : UE 개수 설정
+  uint16_t ueNumPergNb = 12; // 0jkim : UE 개수 설정
 
   bool enableUl = true; // 0jkim : UL 트래픽 활성화 여부 설정(true)
   uint32_t nPackets = 1; // 0jkim : 패킷 개수 설정
