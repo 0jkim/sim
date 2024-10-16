@@ -51,8 +51,8 @@ NS_OBJECT_ENSURE_REGISTERED (NrGnbMac);
 // member SAP forwarders
 // //////////////////////////////////////
 
-std::unordered_map<uint16_t, uint64_t> m_packetCreationTimeMap;
 std::vector<uint64_t> mscheduledAgeValues; // 스케줄링 나이를 계산
+std::unordered_map<uint16_t, uint64_t> m_packetCreationTimeMap;
 std::unordered_map<uint16_t, uint64_t> m_packetReceiveTimeMap;
 
 class NrGnbMacMemberEnbCmacSapProvider : public LteEnbCmacSapProvider
