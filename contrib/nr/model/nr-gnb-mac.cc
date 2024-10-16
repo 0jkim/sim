@@ -41,7 +41,7 @@
 
 #include "bwp-manager-gnb.h"
 #include "aoi-tag.h"
-
+#include <numeric>
 namespace ns3 {
 NS_LOG_COMPONENT_DEFINE ("NrGnbMac");
 
@@ -51,7 +51,7 @@ NS_OBJECT_ENSURE_REGISTERED (NrGnbMac);
 // member SAP forwarders
 // //////////////////////////////////////
 
-std::vector<uint64_t> mscheduledAgeValues; // 스케줄링 나이를 계산
+std::vector<uint64_t> m_scheduledAgeValues; // 스케줄링 후 계산된 UE의 Age를 저장하는 벡터
 std::unordered_map<uint16_t, uint64_t> m_packetCreationTimeMap;
 std::unordered_map<uint16_t, uint64_t> m_packetReceiveTimeMap;
 
@@ -938,11 +938,21 @@ NrGnbMac::DoReceivePhyPdu (Ptr<Packet> p)
   PacketCreationTimeTag creationTimeTag;
   if (p->RemovePacketTag (creationTimeTag))
     {
-      uint64_t creationTime = creationTimeTag.GetCreationTime ();
-      uint64_t currentTime = Simulator::Now ().GetNanoSeconds ();
-      uint64_t age = currentTime - creationTime;
+      uint64_t creationTime =
+          creationTimeTag.GetCreationTime (); // 데이터 패킷 생성 시간에 대한 태그 불러와서 저장
+      uint64_t receiveTime =
+          Simulator::Now ().GetNanoSeconds (); // 데이터 패킷을 받은 현재 시간을 receiveTime에 저장
+      uint64_t age =
+          receiveTime -
+          creationTime; // 데이터 패킷 생성 시간과 데이터 패킷을 받은 현재 시간의 차이로 age 계산
 
-      std::cout << "UE" << rnti << ", Age 값 =" << age << std::endl;
+      // receiveTimemap에 데이터 패킷을 받은 시간을 map에 저장
+      m_packetReceiveTimeMap[rnti] = receiveTime;
+
+      // 현재 계산된 age는 스케줄러 사용할 파라미터임.(이 변수는 스케줄링 후 dci 메시지를 보내는 순서에 따라 계산하기 위함)
+      m_packetCreationTimeMap[rnti] = age;
+
+      std::cout << "스케줄러에 보내기전 " << "UE" << rnti << "의 Age 값 =" << age << std::endl;
       NS_LOG_INFO ("UE" << rnti << ", Age 값 =" << age);
     }
 
@@ -1220,7 +1230,7 @@ NrGnbMac::SendRar (const std::vector<BuildRarListElement_s> &rarList)
     }
 }
 
-void
+void // 여기서 UE의 BSR에 따른 SR요청에 대한 DCI 메시지를 스케줄러가 전달
 NrGnbMac::DoSchedConfigIndication (NrMacSchedSapUser::SchedConfigIndParameters ind)
 {
   NS_ASSERT (ind.m_sfnSf.GetNumerology () == m_currentSlot.GetNumerology ());
@@ -1233,9 +1243,35 @@ NrGnbMac::DoSchedConfigIndication (NrMacSchedSapUser::SchedConfigIndParameters i
 
   SendRar (ind.m_buildRarList);
 
+  m_scheduledAgeValues.clear (); // 스케줄링 후 계산된 각 UE의 Age를 계산하는 벡터를 초기화
+
+  // for 문 시작
   for (unsigned islot = 0; islot < ind.m_slotAllocInfo.m_varTtiAllocInfo.size (); islot++)
     {
       VarTtiAllocInfo &varTtiAllocInfo = ind.m_slotAllocInfo.m_varTtiAllocInfo[islot];
+
+      uint16_t rnti = varTtiAllocInfo.m_dci->m_rnti; // dci 메시지 전달대상인 UE의 rnti 불러오기
+
+      // 스케줄링 수행 gNB MAC 계층에 데이터 패킷이 ?
+      auto receiveTimeIt = m_packetReceiveTimeMap.find (rnti);
+
+      // 스케줄링 수행하기 전 UE의 age 정보를 불러오기
+      auto it = m_packetCreationTimeMap.find (rnti);
+      if (it != m_packetCreationTimeMap.end ()) // 마지막 UE의 패킷이 아닌 경우
+        {
+          uint64_t age = it->second; // m_packetCreationTimeMap에서 rnti에 해당하는 age 값을 가져옴
+          uint64_t receiveTime = receiveTimeIt->second;
+
+          uint64_t currentTime = Simulator::Now ().GetNanoSeconds ();
+          uint64_t aoi = age + (currentTime - receiveTime);
+
+          // AoI 값을 로그로 출력
+          NS_LOG_INFO ("UE " << rnti << "의 AoI 값 = " << aoi << "(스케줄링 수행 이후 시점)");
+
+          // 스케줄링된 Age 값을 벡터에 추가
+          m_scheduledAgeValues.push_back (aoi);
+        }
+
       if (varTtiAllocInfo.m_dci->m_type != DciInfoElementTdma::CTRL &&
           varTtiAllocInfo.m_dci->m_format == DciInfoElementTdma::DL)
         {
@@ -1380,6 +1416,15 @@ NrGnbMac::DoSchedConfigIndication (NrMacSchedSapUser::SchedConfigIndParameters i
               m_ulScheduling (traceInfo);
             }
         }
+    }
+  // for문 끝
+  // 여기서 스케줄링 후 평균 Age 출력
+  if (!m_scheduledAgeValues.empty ())
+    {
+      uint64_t sumAge = std::accumulate (m_scheduledAgeValues.begin (), m_scheduledAgeValues.end (),
+                                         uint64_t (0));
+      uint64_t avgAge = sumAge / m_scheduledAgeValues.size ();
+      NS_LOG_INFO ("\n스케줄링 후 평균 Age 값 : " << avgAge);
     }
 }
 

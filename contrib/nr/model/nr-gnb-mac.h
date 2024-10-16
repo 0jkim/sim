@@ -42,7 +42,7 @@ class NrRarMessage;
 class BeamConfId;
 extern std::unordered_map<uint16_t, uint64_t>
     m_packetCreationTimeMap; // RNTI와 패킷 생성 시간을 저장할 맵
-extern std::vector<uint64_t> mscheduledAgeValues; // 스케줄링 나이를 계산
+extern std::vector<uint64_t> m_scheduledAgeValues; // 스케줄링 나이를 계산
 extern std::unordered_map<uint16_t, uint64_t> m_packetReceiveTimeMap;
 
 /**

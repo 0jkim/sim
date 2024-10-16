@@ -69,7 +69,7 @@ static bool g_rxRxRlcPDUCallbackCalled = false;
 Time g_txPeriod = Seconds (0.1); // 0jkim : 패킷의 전송 주기 0.1초
 Time delay; // 0jkim : 패킷 전송시 지연 시간 저장
 std::fstream m_ScenarioFile; // 0jkim : 시나리오 파일 스트림
-std::vector<uint64_t> packetCreationTimes;
+std::vector<uint64_t> packetCreationTimes; // 패킷 생성시간을 저장하는 전역 벡터변수
 
 /*
  * MyModel class. It contains the function that generates the event to send a packet from the UE to the gNB
@@ -221,19 +221,21 @@ MyModel::SendPacketUl () // 0jkim : UL 트래픽 패킷 전송 함수
   Ptr<Packet> pkt = Create<Packet> (m_packetSize, m_periodicity, m_deadline);
 
   uint64_t creationTimeNs = Simulator::Now ().GetNanoSeconds ();
-  packetCreationTimes.push_back (creationTimeNs); // 백터에 추가
+  packetCreationTimes.push_back (creationTimeNs); // 패킷 생성시간을 백터에 추가
 
   // 패킷에 생성 시간 태그 추가
-  PacketCreationTimeTag creationTimeTag (creationTimeNs);
-  pkt->AddPacketTag (creationTimeTag);
+  PacketCreationTimeTag creationTimeTag (
+      creationTimeNs); // PacketCreationTimeTag 클래스의 멤버 변수인 m_creationTime을 패킷의 생성시간으로 초기화
+  pkt->AddPacketTag (creationTimeTag); // 패킷태그에 패킷생성시간을 추가함
 
   // UE의 ID를 기록하기 위한 태그 추가
   uint32_t ueId = m_device->GetNode ()->GetId ();
-  PacketUeIdTag ueIdTag (ueId);
-  pkt->AddPacketTag (ueIdTag);
+  PacketUeIdTag ueIdTag (
+      ueId); // PacketUeIdTag 클래스의 멤버 변수인 m_ueid을 패킷을 생성한 UE의 ID로 초기화
+  pkt->AddPacketTag (ueIdTag); // 패킷태그에 패킷UEID를 추가함
 
   std::cout << "\n Packet created by UE " << ueId << " at: " << creationTimeNs << " ns"
-            << std::endl;
+            << std::endl; // UE가 생성한 패킷의 생성시간을 출력
 
   // 0jkim : IPv4 헤더 설정
   Ipv4Header ipv4Header;
@@ -249,7 +251,7 @@ MyModel::SendPacketUl () // 0jkim : UL 트래픽 패킷 전송 함수
       ScheduleTxUl_Configuration ();
       m_packetsSent = 1;
     }
-  else if (++m_packetsSent < m_nPackets)
+  else if (++m_packetsSent < m_nPackets) // 패킷개수만큼 ScheduleTxUL 진행
     {
       ScheduleTxUl (m_periodicity);
     }
@@ -264,7 +266,9 @@ MyModel::ScheduleTxUl (uint8_t period)
   if (m_running)
     {
       Time tNext = MilliSeconds (period);
-      m_sendEvent = Simulator::Schedule (tNext, &MyModel::SendPacketUl, this);
+      m_sendEvent = Simulator::Schedule (
+          tNext, &MyModel::SendPacketUl,
+          this); // 현재 sendpacketul메서드와 함께 상향링크 스케줄링 이벤트 시작
     }
 }
 
