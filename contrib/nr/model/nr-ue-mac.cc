@@ -17,13 +17,12 @@
  *
  */
 
-#define NS_LOG_APPEND_CONTEXT                                            \
-  do                                                                     \
-    {                                                                    \
-      std::clog << " [ CellId " << GetCellId() << ", bwpId "             \
-                << GetBwpId () << ", rnti " << m_rnti << "] ";           \
-    }                                                                    \
-  while (false);
+#define NS_LOG_APPEND_CONTEXT                                                             \
+  do                                                                                      \
+    {                                                                                     \
+      std::clog << " [ CellId " << GetCellId () << ", bwpId " << GetBwpId () << ", rnti " \
+                << m_rnti << "] ";                                                        \
+  } while (false);
 
 #include "nr-ue-mac.h"
 //#include "nr-ue-phy.h"
@@ -47,17 +46,18 @@ uint8_t NrUeMac::g_raPreambleId = 0;
 // SAP forwarders
 ///////////////////////////////////////////////////////////
 
-
 class UeMemberNrUeCmacSapProvider : public LteUeCmacSapProvider
 {
 public:
-  UeMemberNrUeCmacSapProvider (NrUeMac* mac);
+  UeMemberNrUeCmacSapProvider (NrUeMac *mac);
 
   // inherited from LteUeCmacSapProvider
   virtual void ConfigureRach (RachConfig rc);
   virtual void StartContentionBasedRandomAccessProcedure ();
-  virtual void StartNonContentionBasedRandomAccessProcedure (uint16_t rnti, uint8_t preambleId, uint8_t prachMask);
-  virtual void AddLc (uint8_t lcId, LteUeCmacSapProvider::LogicalChannelConfig lcConfig, LteMacSapUser* msu);
+  virtual void StartNonContentionBasedRandomAccessProcedure (uint16_t rnti, uint8_t preambleId,
+                                                             uint8_t prachMask);
+  virtual void AddLc (uint8_t lcId, LteUeCmacSapProvider::LogicalChannelConfig lcConfig,
+                      LteMacSapUser *msu);
   virtual void RemoveLc (uint8_t lcId);
   virtual void Reset ();
   virtual void SetRnti (uint16_t rnti);
@@ -65,12 +65,10 @@ public:
   virtual void SetImsi (uint64_t imsi);
 
 private:
-  NrUeMac* m_mac;
+  NrUeMac *m_mac;
 };
 
-
-UeMemberNrUeCmacSapProvider::UeMemberNrUeCmacSapProvider (NrUeMac* mac)
-  : m_mac (mac)
+UeMemberNrUeCmacSapProvider::UeMemberNrUeCmacSapProvider (NrUeMac *mac) : m_mac (mac)
 {
 }
 
@@ -87,14 +85,15 @@ UeMemberNrUeCmacSapProvider::StartContentionBasedRandomAccessProcedure ()
 }
 
 void
-UeMemberNrUeCmacSapProvider::StartNonContentionBasedRandomAccessProcedure (uint16_t rnti, uint8_t preambleId, uint8_t prachMask)
+UeMemberNrUeCmacSapProvider::StartNonContentionBasedRandomAccessProcedure (uint16_t rnti,
+                                                                           uint8_t preambleId,
+                                                                           uint8_t prachMask)
 {
   m_mac->DoStartNonContentionBasedRandomAccessProcedure (rnti, preambleId, prachMask);
 }
 
-
 void
-UeMemberNrUeCmacSapProvider::AddLc (uint8_t lcId, LogicalChannelConfig lcConfig, LteMacSapUser* msu)
+UeMemberNrUeCmacSapProvider::AddLc (uint8_t lcId, LogicalChannelConfig lcConfig, LteMacSapUser *msu)
 {
   m_mac->AddLc (lcId, lcConfig, msu);
 }
@@ -125,26 +124,24 @@ UeMemberNrUeCmacSapProvider::NotifyConnectionSuccessful ()
 
 void
 UeMemberNrUeCmacSapProvider::SetImsi (uint64_t imsi)
- {
-   m_mac->DoSetImsi (imsi);
- }
+{
+  m_mac->DoSetImsi (imsi);
+}
 
 class UeMemberNrMacSapProvider : public LteMacSapProvider
 {
 public:
-  UeMemberNrMacSapProvider (NrUeMac* mac);
+  UeMemberNrMacSapProvider (NrUeMac *mac);
 
   // inherited from LteMacSapProvider
   virtual void TransmitPdu (TransmitPduParameters params);
   virtual void ReportBufferStatus (ReportBufferStatusParameters params);
 
 private:
-  NrUeMac* m_mac;
+  NrUeMac *m_mac;
 };
 
-
-UeMemberNrMacSapProvider::UeMemberNrMacSapProvider (NrUeMac* mac)
-  : m_mac (mac)
+UeMemberNrMacSapProvider::UeMemberNrMacSapProvider (NrUeMac *mac) : m_mac (mac)
 {
 }
 
@@ -165,7 +162,7 @@ class NrUePhySapUser;
 class MacUeMemberPhySapUser : public NrUePhySapUser
 {
 public:
-  MacUeMemberPhySapUser (NrUeMac* mac);
+  MacUeMemberPhySapUser (NrUeMac *mac);
 
   virtual void ReceivePhyPdu (Ptr<Packet> p) override;
 
@@ -181,13 +178,11 @@ public:
   virtual bool SlotIndication_configuredGrant (SfnSf sfn) override;
 
 private:
-  NrUeMac* m_mac;
+  NrUeMac *m_mac;
 };
 
-MacUeMemberPhySapUser::MacUeMemberPhySapUser (NrUeMac* mac)
-  : m_mac (mac)
+MacUeMemberPhySapUser::MacUeMemberPhySapUser (NrUeMac *mac) : m_mac (mac)
 {
-
 }
 void
 MacUeMemberPhySapUser::ReceivePhyPdu (Ptr<Packet> p)
@@ -210,7 +205,7 @@ MacUeMemberPhySapUser::SlotIndication (SfnSf sfn)
 uint8_t
 MacUeMemberPhySapUser::GetNumHarqProcess () const
 {
-  return m_mac->GetNumHarqProcess();
+  return m_mac->GetNumHarqProcess ();
 }
 
 //-----------------------------------------------------------------------
@@ -218,43 +213,35 @@ MacUeMemberPhySapUser::GetNumHarqProcess () const
 TypeId
 NrUeMac::GetTypeId (void)
 {
-  static TypeId tid = TypeId ("ns3::NrUeMac")
-    .SetParent<Object> ()
-    .AddConstructor<NrUeMac> ()
-    .AddAttribute ("NumHarqProcess",
-                   "Number of concurrent stop-and-wait Hybrid ARQ processes per user",
-                    UintegerValue (20),
-                    MakeUintegerAccessor (&NrUeMac::SetNumHarqProcess,
-                                          &NrUeMac::GetNumHarqProcess),
-                    MakeUintegerChecker<uint8_t> ())
-    .AddTraceSource ("UeMacRxedCtrlMsgsTrace",
-                     "Ue MAC Control Messages Traces.",
-                     MakeTraceSourceAccessor (&NrUeMac::m_macRxedCtrlMsgsTrace),
-                     "ns3::NrMacRxTrace::RxedUeMacCtrlMsgsTracedCallback")
-    .AddTraceSource ("UeMacTxedCtrlMsgsTrace",
-                     "Ue MAC Control Messages Traces.",
-                     MakeTraceSourceAccessor (&NrUeMac::m_macTxedCtrlMsgsTrace),
-                     "ns3::NrMacRxTrace::TxedUeMacCtrlMsgsTracedCallback")
-    // Configured Grant
-    .AddAttribute ("CG",
-                  "Activate configured grant scheduling for UL periodic transmissions",
-                  BooleanValue (true),
-                  MakeBooleanAccessor (&NrUeMac::SetCG,
-                                       &NrUeMac::GetCG),
-                  MakeBooleanChecker ())
-    .AddAttribute ("ConfigurationTime",
-                  "Time required to configure UE with configured grant signal",
-                   UintegerValue (30),
-                   MakeUintegerAccessor (&NrUeMac::SetConfigurationTime,
-                                         &NrUeMac::GetConfigurationTime),
-                   MakeUintegerChecker<uint8_t> ())
-    .AddAttribute ("CGPeriod",
-                  "The periodicity of configured grant transmissions",
-                   UintegerValue (10),
-                   MakeUintegerAccessor (&NrUeMac::SetCGPeriod,
-                                         &NrUeMac::GetCGPeriod),
-                   MakeUintegerChecker<uint8_t> ())
-  ;
+  static TypeId tid =
+      TypeId ("ns3::NrUeMac")
+          .SetParent<Object> ()
+          .AddConstructor<NrUeMac> ()
+          .AddAttribute (
+              "NumHarqProcess", "Number of concurrent stop-and-wait Hybrid ARQ processes per user",
+              UintegerValue (20),
+              MakeUintegerAccessor (&NrUeMac::SetNumHarqProcess, &NrUeMac::GetNumHarqProcess),
+              MakeUintegerChecker<uint8_t> ())
+          .AddTraceSource ("UeMacRxedCtrlMsgsTrace", "Ue MAC Control Messages Traces.",
+                           MakeTraceSourceAccessor (&NrUeMac::m_macRxedCtrlMsgsTrace),
+                           "ns3::NrMacRxTrace::RxedUeMacCtrlMsgsTracedCallback")
+          .AddTraceSource ("UeMacTxedCtrlMsgsTrace", "Ue MAC Control Messages Traces.",
+                           MakeTraceSourceAccessor (&NrUeMac::m_macTxedCtrlMsgsTrace),
+                           "ns3::NrMacRxTrace::TxedUeMacCtrlMsgsTracedCallback")
+          // Configured Grant
+          .AddAttribute ("CG", "Activate configured grant scheduling for UL periodic transmissions",
+                         BooleanValue (true),
+                         MakeBooleanAccessor (&NrUeMac::SetCG, &NrUeMac::GetCG),
+                         MakeBooleanChecker ())
+          .AddAttribute (
+              "ConfigurationTime", "Time required to configure UE with configured grant signal",
+              UintegerValue (30),
+              MakeUintegerAccessor (&NrUeMac::SetConfigurationTime, &NrUeMac::GetConfigurationTime),
+              MakeUintegerChecker<uint8_t> ())
+          .AddAttribute ("CGPeriod", "The periodicity of configured grant transmissions",
+                         UintegerValue (10),
+                         MakeUintegerAccessor (&NrUeMac::SetCGPeriod, &NrUeMac::GetCGPeriod),
+                         MakeUintegerChecker<uint8_t> ());
   return tid;
 }
 
@@ -356,7 +343,7 @@ NrUeMac::SetNumHarqProcess (uint8_t numHarqProcess)
     {
       if (m_miUlHarqProcessesPacket.at (i).m_pktBurst == nullptr)
         {
-          Ptr<PacketBurst> pb = CreateObject <PacketBurst> ();
+          Ptr<PacketBurst> pb = CreateObject<PacketBurst> ();
           m_miUlHarqProcessesPacket.at (i).m_pktBurst = pb;
         }
     }
@@ -391,11 +378,12 @@ NrUeMac::DoTransmitPdu (LteMacSapProvider::TransmitPduParameters params)
   params.pdu->AddPacketTag (bearerTag);
 
   m_miUlHarqProcessesPacket.at (params.harqProcessId).m_pktBurst->AddPacket (params.pdu);
-  m_miUlHarqProcessesPacketTimer.at (params.harqProcessId) = GetNumHarqProcess();
+  m_miUlHarqProcessesPacketTimer.at (params.harqProcessId) = GetNumHarqProcess ();
 
   m_ulDciTotalUsed += params.pdu->GetSize ();
 
-  NS_ASSERT_MSG (m_ulDciTotalUsed <= m_ulDci->m_tbSize.at (0), "We used more data than the DCI allowed us.");
+  NS_ASSERT_MSG (m_ulDciTotalUsed <= m_ulDci->m_tbSize.at (0),
+                 "We used more data than the DCI allowed us.");
 
   m_phySapProvider->SendMacPdu (params.pdu, m_ulDciSfnsf, m_ulDci->m_symStart, params.layer);
 }
@@ -407,7 +395,7 @@ NrUeMac::DoReportBufferStatus (LteMacSapProvider::ReportBufferStatusParameters p
 
   auto it = m_ulBsrReceived.find (params.lcid);
 
-  NS_LOG_INFO ("Received BSR for LC Id" << static_cast<uint32_t>(params.lcid));
+  NS_LOG_INFO ("Received BSR for LC Id" << static_cast<uint32_t> (params.lcid));
 
   if (it != m_ulBsrReceived.end ())
     {
@@ -428,23 +416,24 @@ NrUeMac::DoReportBufferStatus (LteMacSapProvider::ReportBufferStatusParameters p
         {
           NS_LOG_INFO ("INACTIVE -> TO_SEND, bufSize " << GetTotalBufSize ());
           m_srState_configuredGrant = TO_SEND_TrafficInfo;
-          if (params.rnti == 4)// Esto lo teno que cambiar, va a ser variable pero por ahroa
+          if (params.rnti == 4) // Esto lo teno que cambiar, va a ser variable pero por ahroa
               // solo para probar
-          {
-            m_traffDeadlineTime =  MicroSeconds(200); //80
-          }
+            {
+              m_traffDeadlineTime = MicroSeconds (200); //80
+            }
           else
-          {
-            m_traffDeadlineTime = MicroSeconds(150); //60
-          }
-          m_traffStartTime = Simulator::Now();
+            {
+              m_traffDeadlineTime = MicroSeconds (150); //60
+            }
+          m_traffStartTime = Simulator::Now ();
           m_trafficPeriodicity = params.periodicity;
         }
 
       if (m_srState_configuredGrant == ACTIVE_CG)
         {
           NS_LOG_INFO ("CONFIGURED GRANT, bufSize " << GetTotalBufSize ());
-          m_srState_configuredGrant = SCH_CG_DATA; //If we have a new packet, we are not going to call to SR.
+          m_srState_configuredGrant =
+              SCH_CG_DATA; //If we have a new packet, we are not going to call to SR.
         }
     }
   else
@@ -456,7 +445,6 @@ NrUeMac::DoReportBufferStatus (LteMacSapProvider::ReportBufferStatusParameters p
         }
     }
 }
-
 
 void
 NrUeMac::SendReportBufferStatus (const SfnSf &dataSfn, uint8_t symStart)
@@ -479,24 +467,26 @@ NrUeMac::SendReportBufferStatus (const SfnSf &dataSfn, uint8_t symStart)
   bsr.m_macCeType = MacCeElement::BSR;
 
   // BSR is reported for each LCG
-  std::unordered_map <uint8_t, LteMacSapProvider::ReportBufferStatusParameters>::iterator it;
-  std::vector<uint32_t> queue (4, 0);   // one value per each of the 4 LCGs, initialized to 0
+  std::unordered_map<uint8_t, LteMacSapProvider::ReportBufferStatusParameters>::iterator it;
+  std::vector<uint32_t> queue (4, 0); // one value per each of the 4 LCGs, initialized to 0
   for (it = m_ulBsrReceived.begin (); it != m_ulBsrReceived.end (); it++)
     {
       uint8_t lcid = it->first;
-      std::unordered_map <uint8_t, LcInfo>::iterator lcInfoMapIt;
+      std::unordered_map<uint8_t, LcInfo>::iterator lcInfoMapIt;
       lcInfoMapIt = m_lcInfoMap.find (lcid);
-      NS_ASSERT (lcInfoMapIt !=  m_lcInfoMap.end ());
-      NS_ASSERT_MSG ((lcid != 0) || (((*it).second.txQueueSize == 0)
-                                     && ((*it).second.retxQueueSize == 0)
-                                     && ((*it).second.statusPduSize == 0)),
+      NS_ASSERT (lcInfoMapIt != m_lcInfoMap.end ());
+      NS_ASSERT_MSG ((lcid != 0) ||
+                         (((*it).second.txQueueSize == 0) && ((*it).second.retxQueueSize == 0) &&
+                          ((*it).second.statusPduSize == 0)),
                      "BSR should not be used for LCID 0");
       uint8_t lcg = lcInfoMapIt->second.lcConfig.logicalChannelGroup;
-      queue.at (lcg) += ((*it).second.txQueueSize + (*it).second.retxQueueSize + (*it).second.statusPduSize);
+      queue.at (lcg) +=
+          ((*it).second.txQueueSize + (*it).second.retxQueueSize + (*it).second.statusPduSize);
     }
 
-  NS_LOG_INFO ("Sending BSR with this info for the LCG: " << queue.at (0) << " " <<
-               queue.at (1) << " " << queue.at(2) << " " << queue.at(3));
+  NS_LOG_INFO ("Sending BSR with this info for the LCG: " << queue.at (0) << " " << queue.at (1)
+                                                          << " " << queue.at (2) << " "
+                                                          << queue.at (3));
   // FF API says that all 4 LCGs are always present
   bsr.m_macCeValue.m_bufferStatus.push_back (NrMacShortBsrCe::FromBytesToLevel (queue.at (0)));
   bsr.m_macCeValue.m_bufferStatus.push_back (NrMacShortBsrCe::FromBytesToLevel (queue.at (1)));
@@ -528,7 +518,8 @@ NrUeMac::SendReportBufferStatus (const SfnSf &dataSfn, uint8_t symStart)
   p->AddPacketTag (bearerTag);
 
   m_ulDciTotalUsed += p->GetSize ();
-  NS_ASSERT_MSG (m_ulDciTotalUsed <= m_ulDci->m_tbSize.at (0), "We used more data than the DCI allowed us.");
+  NS_ASSERT_MSG (m_ulDciTotalUsed <= m_ulDci->m_tbSize.at (0),
+                 "We used more data than the DCI allowed us.");
 
   //MIMO is not supported for UL yet.
   //Therefore, there will be only
@@ -539,12 +530,12 @@ NrUeMac::SendReportBufferStatus (const SfnSf &dataSfn, uint8_t symStart)
 }
 
 void
-NrUeMac::SetUeCmacSapUser (LteUeCmacSapUser* s)
+NrUeMac::SetUeCmacSapUser (LteUeCmacSapUser *s)
 {
   m_cmacSapUser = s;
 }
 
-LteUeCmacSapProvider*
+LteUeCmacSapProvider *
 NrUeMac::GetUeCmacSapProvider (void)
 {
   return m_cmacSapProvider;
@@ -563,7 +554,7 @@ NrUeMac::RefreshHarqProcessesPacketBuffer (void)
             {
               // timer expired: drop packets in buffer for this process
               NS_LOG_INFO ("HARQ Proc Id " << i << " packets buffer expired");
-              Ptr<PacketBurst> emptyPb = CreateObject <PacketBurst> ();
+              Ptr<PacketBurst> emptyPb = CreateObject<PacketBurst> ();
               m_miUlHarqProcessesPacket.at (i).m_pktBurst = emptyPb;
               m_miUlHarqProcessesPacket.at (i).m_lcidList.clear ();
             }
@@ -622,7 +613,7 @@ NrUeMac::DoReceivePhyPdu (Ptr<Packet> p)
   LteRadioBearerTag tag;
   p->RemovePacketTag (tag);
 
-  if (tag.GetRnti() != m_rnti) // Packet is for another user
+  if (tag.GetRnti () != m_rnti) // Packet is for another user
     {
       return;
     }
@@ -635,7 +626,7 @@ NrUeMac::DoReceivePhyPdu (Ptr<Packet> p)
   rxParams.rnti = m_rnti;
   rxParams.lcid = header.GetLcId ();
 
-  auto it = m_lcInfoMap.find (header.GetLcId());
+  auto it = m_lcInfoMap.find (header.GetLcId ());
 
   // p can be empty. Well, right now no, but when someone will add CE in downlink,
   // then p can be empty.
@@ -672,43 +663,39 @@ NrUeMac::ProcessUlDci (const Ptr<NrUlDciMessage> &dciMsg)
   // It represents the TO_RECEIVE_CG state
   if (m_cgScheduling)
     {
-      m_dciGranted_stored[cg_slot_counter_DCI] = std::make_shared <DciInfoElementTdma> (m_ulDci->m_rnti,
-                                                                                 m_ulDci->m_format,
-                                                                                 m_ulDci->m_symStart,
-                                                                                 m_ulDci->m_numSym,
-                                                                                 m_ulDci->m_mcs,
-                                                                                 m_ulDci->m_tbSize,
-                                                                                 m_ulDci->m_ndi,
-                                                                                 m_ulDci->m_rv,
-                                                                                 m_ulDci->m_type,
-                                                                                 m_ulDci -> m_bwpIndex,
-                                                                                 m_ulDci->m_harqProcess,
-                                                                                 m_ulDci->m_rbgBitmask,
-                                                                                 m_ulDci->m_tpc);
+      m_dciGranted_stored[cg_slot_counter_DCI] = std::make_shared<DciInfoElementTdma> (
+          m_ulDci->m_rnti, m_ulDci->m_format, m_ulDci->m_symStart, m_ulDci->m_numSym,
+          m_ulDci->m_mcs, m_ulDci->m_tbSize, m_ulDci->m_ndi, m_ulDci->m_rv, m_ulDci->m_type,
+          m_ulDci->m_bwpIndex, m_ulDci->m_harqProcess, m_ulDci->m_rbgBitmask, m_ulDci->m_tpc);
 
       uint8_t streamId = 0;
       SfnSf dataSfn_cg = m_currentSlot;
       uint8_t number_slots_for_processing_configurationPeriod = 5;
-      uint8_t numberOfSlot_insideOneSubframe = pow(2,(m_currentSlot.GetNumerology ()));
-      m_configurationTime = GetConfigurationTime();
-      uint8_t number_slots_configuration = (GetConfigurationTime()*numberOfSlot_insideOneSubframe)-number_slots_for_processing_configurationPeriod;
-      dataSfn_cg.Add(number_slots_configuration);
-      uint64_t key = dataSfn_cg.GetEncForStreamWithSymStart (streamId, m_dciGranted_stored[cg_slot_counter_DCI]->m_symStart);
+      uint8_t numberOfSlot_insideOneSubframe = pow (2, (m_currentSlot.GetNumerology ()));
+      m_configurationTime = GetConfigurationTime ();
+      uint8_t number_slots_configuration =
+          (GetConfigurationTime () * numberOfSlot_insideOneSubframe) -
+          number_slots_for_processing_configurationPeriod;
+      dataSfn_cg.Add (number_slots_configuration);
+      uint64_t key = dataSfn_cg.GetEncForStreamWithSymStart (
+          streamId, m_dciGranted_stored[cg_slot_counter_DCI]->m_symStart);
 
       auto it_1 = m_dci_cg_map.find (key);
 
       if (it_1 == m_dci_cg_map.end ())
         {
-          it_1 = m_dci_cg_map.insert (std::make_pair (key, m_dciGranted_stored[cg_slot_counter_DCI])).first;
-          cg_slot_counter_DCI = cg_slot_counter_DCI +1;
+          it_1 =
+              m_dci_cg_map.insert (std::make_pair (key, m_dciGranted_stored[cg_slot_counter_DCI]))
+                  .first;
+          cg_slot_counter_DCI = cg_slot_counter_DCI + 1;
         }
     }
 
   m_macRxedCtrlMsgsTrace (m_currentSlot, GetCellId (), m_rnti, GetBwpId (), dciMsg);
 
-  NS_LOG_INFO ("UL DCI received, transmit data in slot " << dataSfn <<
-               " Harq Process " << +m_ulDci->m_harqProcess <<
-               " TBS " << m_ulDci->m_tbSize.at (0) << " total queue " << GetTotalBufSize ());
+  NS_LOG_INFO ("UL DCI received, transmit data in slot "
+               << dataSfn << " Harq Process " << +m_ulDci->m_harqProcess << " TBS "
+               << m_ulDci->m_tbSize.at (0) << " total queue " << GetTotalBufSize ());
 
   if (m_ulDci->m_ndi.at (0) == 0)
     {
@@ -728,8 +715,9 @@ NrUeMac::ProcessUlDci (const Ptr<NrUlDciMessage> &dciMsg)
       // the BSR.
       SendReportBufferStatus (dataSfn, m_ulDci->m_symStart);
 
-      NS_LOG_INFO ("UL DCI processing done, sent to PHY a total of " << m_ulDciTotalUsed <<
-                   " B out of " << m_ulDci->m_tbSize.at (0) << " allocated bytes ");
+      NS_LOG_INFO ("UL DCI processing done, sent to PHY a total of "
+                   << m_ulDciTotalUsed << " B out of " << m_ulDci->m_tbSize.at (0)
+                   << " allocated bytes ");
 
       if (GetTotalBufSize () == 0)
         {
@@ -776,18 +764,19 @@ NrUeMac::TransmitRetx ()
 
   if (pb == nullptr)
     {
-      NS_LOG_WARN ("The previous transmission did not contain any new data; "
-                   "probably it was BSR only. To not send an old BSR to the scheduler, "
-                   "we don't send anything back in this allocation. Eventually, "
-                   "the Harq timer at gnb will expire, and soon this allocation will be forgotten.");
+      NS_LOG_WARN (
+          "The previous transmission did not contain any new data; "
+          "probably it was BSR only. To not send an old BSR to the scheduler, "
+          "we don't send anything back in this allocation. Eventually, "
+          "the Harq timer at gnb will expire, and soon this allocation will be forgotten.");
       return;
     }
 
-  NS_LOG_DEBUG ("UE MAC RETX HARQ " << + m_ulDci->m_harqProcess);
+  NS_LOG_DEBUG ("UE MAC RETX HARQ " << +m_ulDci->m_harqProcess);
 
-  NS_ASSERT (pb->GetNPackets() > 0);
+  NS_ASSERT (pb->GetNPackets () > 0);
 
-  for (std::list<Ptr<Packet> >::const_iterator j = pb->Begin (); j != pb->End (); ++j)
+  for (std::list<Ptr<Packet>>::const_iterator j = pb->Begin (); j != pb->End (); ++j)
     {
       Ptr<Packet> pkt = (*j)->Copy ();
       LteRadioBearerTag bearerTag;
@@ -802,7 +791,7 @@ NrUeMac::TransmitRetx ()
       m_phySapProvider->SendMacPdu (pkt, m_ulDciSfnsf, m_ulDci->m_symStart, streamId);
     }
 
-  m_miUlHarqProcessesPacketTimer.at (m_ulDci->m_harqProcess) = GetNumHarqProcess();
+  m_miUlHarqProcessesPacketTimer.at (m_ulDci->m_harqProcess) = GetNumHarqProcess ();
 }
 
 void
@@ -817,7 +806,7 @@ NrUeMac::SendRetxData (uint32_t usefulTbs, uint32_t activeLcsRetx)
 
   uint32_t bytesPerLcId = usefulTbs / activeLcsRetx;
 
-  for (auto & itBsr : m_ulBsrReceived)
+  for (auto &itBsr : m_ulBsrReceived)
     {
       auto &bsr = itBsr.second;
 
@@ -831,8 +820,10 @@ NrUeMac::SendRetxData (uint32_t usefulTbs, uint32_t activeLcsRetx)
           txParams.harqId = m_ulDci->m_harqProcess;
           txParams.componentCarrierId = GetBwpId ();
 
-          NS_LOG_INFO ("Notifying RLC of LCID " << +bsr.lcid << " of a TxOpp "
-                       "of " << bytesPerLcId << " B for a RETX PDU");
+          NS_LOG_INFO ("Notifying RLC of LCID " << +bsr.lcid
+                                                << " of a TxOpp "
+                                                   "of "
+                                                << bytesPerLcId << " B for a RETX PDU");
 
           m_lcInfoMap.at (bsr.lcid).macSapUser->NotifyTxOpportunity (txParams);
           // After this call, m_ulDciTotalUsed has been updated with the
@@ -847,15 +838,16 @@ NrUeMac::SendRetxData (uint32_t usefulTbs, uint32_t activeLcsRetx)
       else
         {
           NS_LOG_DEBUG ("Something wrong with the calculation of overhead."
-                        "Active LCS Retx: " << activeLcsRetx << " assigned to this: " <<
-                        bytesPerLcId << ", with TBS of " << m_ulDci->m_tbSize.at (0) <<
-                        " usefulTbs " << usefulTbs << " and total used " << m_ulDciTotalUsed);
+                        "Active LCS Retx: "
+                        << activeLcsRetx << " assigned to this: " << bytesPerLcId
+                        << ", with TBS of " << m_ulDci->m_tbSize.at (0) << " usefulTbs "
+                        << usefulTbs << " and total used " << m_ulDciTotalUsed);
         }
     }
 }
 
 void
-NrUeMac::SendTxData(uint32_t usefulTbs, uint32_t activeTx)
+NrUeMac::SendTxData (uint32_t usefulTbs, uint32_t activeTx)
 {
   NS_LOG_FUNCTION (this);
 
@@ -866,7 +858,7 @@ NrUeMac::SendTxData(uint32_t usefulTbs, uint32_t activeTx)
 
   uint32_t bytesPerLcId = usefulTbs / activeTx;
 
-  for (auto & itBsr : m_ulBsrReceived)
+  for (auto &itBsr : m_ulBsrReceived)
     {
       auto &bsr = itBsr.second;
 
@@ -880,8 +872,10 @@ NrUeMac::SendTxData(uint32_t usefulTbs, uint32_t activeTx)
           txParams.harqId = m_ulDci->m_harqProcess;
           txParams.componentCarrierId = GetBwpId ();
 
-          NS_LOG_INFO ("Notifying RLC of LCID " << +bsr.lcid << " of a TxOpp "
-                       "of " << bytesPerLcId << " B for a TX PDU");
+          NS_LOG_INFO ("Notifying RLC of LCID " << +bsr.lcid
+                                                << " of a TxOpp "
+                                                   "of "
+                                                << bytesPerLcId << " B for a TX PDU");
 
           m_lcInfoMap.at (bsr.lcid).macSapUser->NotifyTxOpportunity (txParams);
           // After this call, m_ulDciTotalUsed has been updated with the
@@ -891,16 +885,16 @@ NrUeMac::SendTxData(uint32_t usefulTbs, uint32_t activeTx)
           // We need to use std::min here because bytesPerLcId can be
           // greater than bsr.txQueueSize because scheduler can assign
           // more bytes than needed due to how TB size is computed.
-         // bsr.txQueueSize -= std::min (bytesPerLcId, bsr.txQueueSize);
-          bsr.txQueueSize -= std::min (bytesPerLcId-2, bsr.txQueueSize);
-
+          // bsr.txQueueSize -= std::min (bytesPerLcId, bsr.txQueueSize);
+          bsr.txQueueSize -= std::min (bytesPerLcId - 2, bsr.txQueueSize);
         }
       else
         {
           NS_LOG_DEBUG ("Something wrong with the calculation of overhead."
-                        "Active LCS Retx: " << activeTx << " assigned to this: " <<
-                        bytesPerLcId << ", with TBS of " << m_ulDci->m_tbSize.at (0) <<
-                        " usefulTbs " << usefulTbs << " and total used " << m_ulDciTotalUsed);
+                        "Active LCS Retx: "
+                        << activeTx << " assigned to this: " << bytesPerLcId << ", with TBS of "
+                        << m_ulDci->m_tbSize.at (0) << " usefulTbs " << usefulTbs
+                        << " and total used " << m_ulDciTotalUsed);
         }
     }
 }
@@ -910,7 +904,7 @@ NrUeMac::SendNewData ()
 {
   NS_LOG_FUNCTION (this);
   // New transmission -> empty pkt buffer queue (for deleting eventual pkts not acked )
-  Ptr<PacketBurst> pb = CreateObject <PacketBurst> ();
+  Ptr<PacketBurst> pb = CreateObject<PacketBurst> ();
   m_miUlHarqProcessesPacket.at (m_ulDci->m_harqProcess).m_pktBurst = pb;
   m_miUlHarqProcessesPacket.at (m_ulDci->m_harqProcess).m_lcidList.clear ();
   NS_LOG_INFO ("Reset HARQP " << +m_ulDci->m_harqProcess);
@@ -924,7 +918,7 @@ NrUeMac::SendNewData ()
   uint16_t activeLcsTx = 0;
   uint32_t totRetx = 0;
   uint32_t totTx = 0;
-  for (const auto & itBsr : m_ulBsrReceived)
+  for (const auto &itBsr : m_ulBsrReceived)
     {
       totRetx += itBsr.second.retxQueueSize;
       totTx += itBsr.second.txQueueSize;
@@ -944,15 +938,18 @@ NrUeMac::SendNewData ()
   // out. For the rest that we have left, we can use only a part of it because of
   // the overhead of the SHORT_BSR, which is 5 bytes.
   NS_ASSERT_MSG (m_ulDciTotalUsed + 5 <= m_ulDci->m_tbSize.at (0),
-                 "The StatusPDU used " << m_ulDciTotalUsed << " B, we don't have any for the SHORT_BSR.");
+                 "The StatusPDU used " << m_ulDciTotalUsed
+                                       << " B, we don't have any for the SHORT_BSR.");
   uint32_t usefulTbs = m_ulDci->m_tbSize.at (0) - m_ulDciTotalUsed - 5;
 
   // Now, we have 3 bytes of overhead for each subPDU. Let's try to serve all
   // the queues with some RETX data.
   if (activeLcsRetx * 3 > usefulTbs)
     {
-      NS_LOG_DEBUG ("The overhead for transmitting retx data is greater than the space for transmitting it."
-                    "Ignore the TBS of " << usefulTbs << " B.");
+      NS_LOG_DEBUG (
+          "The overhead for transmitting retx data is greater than the space for transmitting it."
+          "Ignore the TBS of "
+          << usefulTbs << " B.");
     }
   else
     {
@@ -971,8 +968,10 @@ NrUeMac::SendNewData ()
   // then nothing.
   if (activeLcsTx * 3 > usefulTbs)
     {
-      NS_LOG_DEBUG ("The overhead for transmitting new data is greater than the space for transmitting it."
-                    "Ignore the TBS of " << usefulTbs << " B.");
+      NS_LOG_DEBUG (
+          "The overhead for transmitting new data is greater than the space for transmitting it."
+          "Ignore the TBS of "
+          << usefulTbs << " B.");
     }
   else
     {
@@ -989,18 +988,17 @@ NrUeMac::SendNewData ()
     }
 }
 
-
 void
-NrUeMac::SendNewStatusData()
+NrUeMac::SendNewStatusData ()
 {
   NS_LOG_FUNCTION (this);
 
   bool hasStatusPdu = false;
   bool sentOneStatusPdu = false;
 
-  for (auto & bsrIt : m_ulBsrReceived)
+  for (auto &bsrIt : m_ulBsrReceived)
     {
-      auto & bsr = bsrIt.second;
+      auto &bsr = bsrIt.second;
 
       if (bsr.statusPduSize > 0)
         {
@@ -1017,8 +1015,10 @@ NrUeMac::SendNewStatusData()
               txParams.harqId = m_ulDci->m_harqProcess;
               txParams.componentCarrierId = GetBwpId ();
 
-              NS_LOG_INFO ("Notifying RLC of LCID " << +bsr.lcid << " of a TxOpp "
-                           "of " << bsr.statusPduSize << " B for a status PDU");
+              NS_LOG_INFO ("Notifying RLC of LCID " << +bsr.lcid
+                                                    << " of a TxOpp "
+                                                       "of "
+                                                    << bsr.statusPduSize << " B for a status PDU");
 
               m_lcInfoMap.at (bsr.lcid).macSapUser->NotifyTxOpportunity (txParams);
               // After this call, m_ulDciTotalUsed has been updated with the
@@ -1029,31 +1029,30 @@ NrUeMac::SendNewStatusData()
             }
           else
             {
-              NS_LOG_INFO ("Cannot send StatusPdu of " << bsr.statusPduSize <<
-                           " B, we already used all the TBS");
+              NS_LOG_INFO ("Cannot send StatusPdu of " << bsr.statusPduSize
+                                                       << " B, we already used all the TBS");
             }
         }
     }
 
-  NS_ABORT_MSG_IF (hasStatusPdu && !sentOneStatusPdu,
-                   "The TBS of size " << m_ulDci->m_tbSize.at (0) << " doesn't allow us "
-                   "to send one status PDU...");
+  NS_ABORT_MSG_IF (hasStatusPdu && !sentOneStatusPdu, "The TBS of size "
+                                                          << m_ulDci->m_tbSize.at (0)
+                                                          << " doesn't allow us "
+                                                             "to send one status PDU...");
 }
 
 void
-NrUeMac::DoReceiveControlMessage  (Ptr<NrControlMessage> msg)
+NrUeMac::DoReceiveControlMessage (Ptr<NrControlMessage> msg)
 {
   NS_LOG_FUNCTION (this << msg);
 
   switch (msg->GetMessageType ())
     {
-    case (NrControlMessage::UL_DCI):
-      {
+      case (NrControlMessage::UL_DCI): {
         ProcessUlDci (DynamicCast<NrUlDciMessage> (msg));
         break;
       }
-    case (NrControlMessage::RAR):
-      {
+      case (NrControlMessage::RAR): {
         NS_LOG_INFO ("Received RAR in slot " << m_currentSlot);
 
         m_macRxedCtrlMsgsTrace (m_currentSlot, GetCellId (), m_rnti, GetBwpId (), msg);
@@ -1061,8 +1060,8 @@ NrUeMac::DoReceiveControlMessage  (Ptr<NrControlMessage> msg)
         if (m_waitingForRaResponse == true)
           {
             Ptr<NrRarMessage> rarMsg = DynamicCast<NrRarMessage> (msg);
-            NS_LOG_LOGIC ("got RAR with RA-RNTI " << +rarMsg->GetRaRnti () <<
-                          ", expecting " << +m_raRnti);
+            NS_LOG_LOGIC ("got RAR with RA-RNTI " << +rarMsg->GetRaRnti () << ", expecting "
+                                                  << +m_raRnti);
             for (auto it = rarMsg->RarListBegin (); it != rarMsg->RarListEnd (); ++it)
               {
                 if (it->rapId == m_raPreambleId)
@@ -1079,14 +1078,14 @@ NrUeMac::DoReceiveControlMessage  (Ptr<NrControlMessage> msg)
     }
 }
 
-NrUePhySapUser*
+NrUePhySapUser *
 NrUeMac::GetPhySapUser ()
 {
   return m_phySapUser;
 }
 
 void
-NrUeMac::SetPhySapProvider (NrPhySapProvider* ptr)
+NrUeMac::SetPhySapProvider (NrPhySapProvider *ptr)
 {
   m_phySapProvider = ptr;
 }
@@ -1129,18 +1128,24 @@ NrUeMac::SendRaPreamble ([[maybe_unused]] bool contention)
 }
 
 void
-NrUeMac::DoStartNonContentionBasedRandomAccessProcedure (uint16_t rnti, [[maybe_unused]] uint8_t preambleId, uint8_t prachMask)
+NrUeMac::DoStartNonContentionBasedRandomAccessProcedure (uint16_t rnti,
+                                                         [[maybe_unused]] uint8_t preambleId,
+                                                         uint8_t prachMask)
 {
   NS_LOG_FUNCTION (this << " rnti" << rnti);
-  NS_ASSERT_MSG (prachMask == 0, "requested PRACH MASK = " << (uint32_t) prachMask << ", but only PRACH MASK = 0 is supported");
+  NS_ASSERT_MSG (prachMask == 0,
+                 "requested PRACH MASK = " << (uint32_t) prachMask
+                                           << ", but only PRACH MASK = 0 is supported");
   m_rnti = rnti;
 }
 
 void
-NrUeMac::AddLc (uint8_t lcId,  LteUeCmacSapProvider::LogicalChannelConfig lcConfig, LteMacSapUser* msu)
+NrUeMac::AddLc (uint8_t lcId, LteUeCmacSapProvider::LogicalChannelConfig lcConfig,
+                LteMacSapUser *msu)
 {
   NS_LOG_FUNCTION (this << " lcId" << (uint32_t) lcId);
-  NS_ASSERT_MSG (m_lcInfoMap.find (lcId) == m_lcInfoMap.end (), "cannot add channel because LCID " << lcId << " is already present");
+  NS_ASSERT_MSG (m_lcInfoMap.find (lcId) == m_lcInfoMap.end (),
+                 "cannot add channel because LCID " << lcId << " is already present");
 
   LcInfo lcInfo;
   lcInfo.lcConfig = lcConfig;
@@ -1154,7 +1159,7 @@ NrUeMac::DoRemoveLc (uint8_t lcId)
   NS_LOG_FUNCTION (this << " lcId" << lcId);
 }
 
-LteMacSapProvider*
+LteMacSapProvider *
 NrUeMac::GetUeMacSapProvider (void)
 {
   return m_macSapProvider;
@@ -1177,9 +1182,10 @@ NrUeMac::AssignStreams (int64_t stream)
 
 //Configured Grant
 
-bool  MacUeMemberPhySapUser::SlotIndication_configuredGrant (SfnSf sfn)
+bool
+MacUeMemberPhySapUser::SlotIndication_configuredGrant (SfnSf sfn)
 {
-  return m_mac->DoSlotIndication_configuredGrant(sfn);
+  return m_mac->DoSlotIndication_configuredGrant (sfn);
 }
 
 bool
@@ -1194,26 +1200,26 @@ NrUeMac::DoSlotIndication_configuredGrant (const SfnSf &sfn)
 
   if (m_srState_configuredGrant == TO_SEND_TrafficInfo)
     {
-      uint32_t bufSr = GetTotalBufSize();
-      NS_LOG_INFO ("Sending CGR to PHY in slot " << sfn <<", changes the state"
-                   ": TO_SEND_TrafficInfo -> TO_RECEIVE_CG, with bufSr: "<< bufSr);
-      if (Simulator::Now() == m_traffStartTime )
-      {
-          m_traffStartTime = m_traffStartTime - Simulator::Now();
-      }
+      uint32_t bufSr = GetTotalBufSize ();
+      NS_LOG_INFO ("Sending CGR to PHY in slot "
+                   << sfn
+                   << ", changes the state"
+                      ": TO_SEND_TrafficInfo -> TO_RECEIVE_CG, with bufSr: "
+                   << bufSr);
+      if (Simulator::Now () == m_traffStartTime)
+        {
+          m_traffStartTime = m_traffStartTime - Simulator::Now ();
+        }
       else
-      {
-        m_traffStartTime = m_traffStartTime - m_startSlotTime ;
-      }
+        {
+          m_traffStartTime = m_traffStartTime - m_startSlotTime;
+        }
       //m_traffDeadlineTime = m_traffDeadlineTime + m_startSlotTime;
-      std::cout << "nanoseconds since epoch StartSlot: "
-                                << m_startSlotTime<<
-                                "  InitTime: "
-                                << m_traffStartTime<<
-                                "  DeadlineTime"
-                                <<m_traffDeadlineTime<<'\n';
+      std::cout << "nanoseconds since epoch StartSlot: " << m_startSlotTime
+                << "  InitTime: " << m_traffStartTime << "  DeadlineTime" << m_traffDeadlineTime
+                << '\n';
       // UE MAC sends CGR to PHY in order to send to the gNB
-      SendTrafficInfo();
+      SendTrafficInfo ();
 
       m_srState_configuredGrant = TO_RECEIVE_CG;
       configuredGrant_state = false;
@@ -1232,7 +1238,8 @@ NrUeMac::DoSlotIndication_configuredGrant (const SfnSf &sfn)
       else
         {
           uint8_t streamId = 0;
-          auto it = m_dci_cg_map.find (m_currentSlot.GetEncForStreamWithSymStart (streamId, m_dciGranted_stored[cg_slot_counter_DCI_2]->m_symStart));
+          auto it = m_dci_cg_map.find (m_currentSlot.GetEncForStreamWithSymStart (
+              streamId, m_dciGranted_stored[cg_slot_counter_DCI_2]->m_symStart));
 
           if (it == m_dci_cg_map.end ())
             {
@@ -1244,26 +1251,29 @@ NrUeMac::DoSlotIndication_configuredGrant (const SfnSf &sfn)
               m_ulDciSfnsf = m_currentSlot;
               m_ulDci = it->second;
               m_dci_cg_map.erase (it);
-              ProcessULPacket();
+              ProcessULPacket ();
 
               NS_LOG_INFO ("Sending a packet to PHY layer in slot " << m_ulDciSfnsf);
 
               // Prepare resources for future transmission
               SfnSf dataSfn_cg = m_currentSlot;
-              uint8_t numberOfSlot_insideOneSubframe = pow(2,(m_currentSlot.GetNumerology ()));
-              m_cgPeriod = GetCGPeriod();
-              uint8_t number_slots_configuration = (m_cgPeriod*numberOfSlot_insideOneSubframe);
-              dataSfn_cg.Add(number_slots_configuration);
-              uint64_t key = dataSfn_cg.GetEncForStreamWithSymStart (streamId, m_dciGranted_stored[cg_slot_counter_DCI_2]->m_symStart);
+              uint8_t numberOfSlot_insideOneSubframe = pow (2, (m_currentSlot.GetNumerology ()));
+              m_cgPeriod = GetCGPeriod ();
+              uint8_t number_slots_configuration = (m_cgPeriod * numberOfSlot_insideOneSubframe);
+              dataSfn_cg.Add (number_slots_configuration);
+              uint64_t key = dataSfn_cg.GetEncForStreamWithSymStart (
+                  streamId, m_dciGranted_stored[cg_slot_counter_DCI_2]->m_symStart);
 
               auto it_1 = m_dci_cg_map.find (key);
 
               if (it_1 == m_dci_cg_map.end ())
                 {
-                  it_1 = m_dci_cg_map.insert (std::make_pair (key, m_dciGranted_stored[cg_slot_counter_DCI_2])).first;
-                  cg_slot_counter_DCI_2 = cg_slot_counter_DCI_2 +1;
+                  it_1 =
+                      m_dci_cg_map
+                          .insert (std::make_pair (key, m_dciGranted_stored[cg_slot_counter_DCI_2]))
+                          .first;
+                  cg_slot_counter_DCI_2 = cg_slot_counter_DCI_2 + 1;
                 }
-
             }
         }
       //Send the SCH_CG_DATA state to UE-PHY
@@ -1280,20 +1290,18 @@ NrUeMac::DoSlotIndication_configuredGrant (const SfnSf &sfn)
 }
 
 void
-NrUeMac::ProcessULPacket()
+NrUeMac::ProcessULPacket ()
 {
   NS_LOG_FUNCTION (this);
 
   // Saving the data we need in DoTransmitPdu
   m_ulDciTotalUsed = 0;
 
-
   //m_macRxedCtrlMsgsTrace (m_currentSlot, GetCellId (), m_rnti, GetBwpId (), dciMsg);
 
-  NS_LOG_INFO ("UL DCI received, transmit data in slot " << m_ulDciSfnsf <<
-               " Harq Process " << +m_ulDci->m_harqProcess <<
-               " TBS " << m_ulDci->m_tbSize.at (0) << " total queue " << GetTotalBufSize ());
-
+  NS_LOG_INFO ("UL DCI received, transmit data in slot "
+               << m_ulDciSfnsf << " Harq Process " << +m_ulDci->m_harqProcess << " TBS "
+               << m_ulDci->m_tbSize.at (0) << " total queue " << GetTotalBufSize ());
 
   if (m_ulDci->m_ndi.at (0) == 0)
     {
@@ -1312,10 +1320,11 @@ NrUeMac::ProcessULPacket()
       // Send a new BSR. SendNewData() already took into account the size of
       // the BSR.
       SendReportBufferStatus (m_ulDciSfnsf, m_ulDci->m_symStart);
-      NS_LOG_INFO ("UL DCI processing done, sent to PHY a total of " << m_ulDciTotalUsed <<
-                   " B out of " << m_ulDci->m_tbSize.at (0) << " allocated bytes ");
+      NS_LOG_INFO ("UL DCI processing done, sent to PHY a total of "
+                   << m_ulDciTotalUsed << " B out of " << m_ulDci->m_tbSize.at (0)
+                   << " allocated bytes ");
 
-     if (GetTotalBufSize () == 0)
+      if (GetTotalBufSize () == 0)
         {
           // the UE may have been scheduled, but we didn't use a single byte
           // of the allocation. So send an empty PDU. This happens because the
@@ -1391,21 +1400,21 @@ NrUeMac::SendTrafficInfo () const
   Ptr<NrCGRMessage> msg = Create<NrCGRMessage> ();
   msg->SetSourceBwp (GetBwpId ());
   msg->SetRNTI (m_rnti);
-  msg -> SetBufSize(GetTotalBufSize());
-  msg -> SetTrafficP(m_trafficPeriodicity);
-  msg -> SetTrafficTimeInit(m_traffStartTime);
-  msg -> SetTrafficDeadline(m_traffDeadlineTime);
+  msg->SetBufSize (GetTotalBufSize ());
+  msg->SetTrafficP (m_trafficPeriodicity);
+  msg->SetTrafficTimeInit (m_traffStartTime);
+  msg->SetTrafficDeadline (m_traffDeadlineTime);
 
   for (auto it = m_ulBsrReceived.cbegin (); it != m_ulBsrReceived.cend (); ++it)
     {
       if ((*it).second.rnti == m_rnti)
         {
           uint8_t lcid = (*it).first;
-          msg -> SetLCID(lcid);
+          msg->SetLCID (lcid);
         }
     }
 
   m_phySapProvider->SendControlMessage (msg);
 }
 
-}
+} // namespace ns3

@@ -1,25 +1,5 @@
 Nº UE	Init	Latency	Periodicity
-40
-100000
-100000
-100000
-100000
-100000
-100000
-100000
-100000
-100000
-100000
-100000
-100000
-100000
-100000
-100000
-100000
-100000
-100000
-100000
-100000
+20
 100000
 100000
 100000
@@ -61,47 +41,7 @@ Nº UE	Init	Latency	Periodicity
 10000000
 10000000
 10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
-10000000
 
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
 10
 10
 10
@@ -127,112 +67,7 @@ Nº UE	Init	Latency	Periodicity
 
  Data received at RLC layer at:+1.64064e+08ns
 
- rnti:15
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64064e+08ns
-
- rnti:14
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64064e+08ns
-
- rnti:13
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64064e+08ns
-
- rnti:30
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64064e+08ns
-
- rnti:31
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64064e+08ns
-
- rnti:32
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64064e+08ns
-
- rnti:33
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64064e+08ns
-
- rnti:34
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64064e+08ns
-
- rnti:35
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64064e+08ns
-
- rnti:36
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64064e+08ns
-
- rnti:37
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64064e+08ns
-
- rnti:38
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64064e+08ns
-
- rnti:39
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64064e+08ns
-
- rnti:40
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64064e+08ns
-
- rnti:11
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64064e+08ns
-
- rnti:10
+ rnti:8
 
  delay :1528568
 
@@ -246,7 +81,84 @@ Nº UE	Init	Latency	Periodicity
 
  Data received at RLC layer at:+1.64064e+08ns
 
- rnti:8
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.64064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.64064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.64064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.64064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.64064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.64064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.64064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.64064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.64064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.64064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.64064e+08ns
+
+ rnti:7
 
  delay :1528568
 
@@ -261,6 +173,13 @@ Nº UE	Init	Latency	Periodicity
  Data received at RLC layer at:+1.64064e+08ns
 
  rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.64064e+08ns
+
+ rnti:4
 
  delay :1528568
 
@@ -286,106 +205,11530 @@ Nº UE	Init	Latency	Periodicity
  delay :1528568
 
 
- Data received at RLC layer at:+1.64064e+08ns
+ Data received at RLC layer at:+1.74064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.74064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.74064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.74064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.74064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.74064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.74064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.74064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.74064e+08ns
 
  rnti:16
 
  delay :1528568
 
 
- Data received at RLC layer at:+1.64564e+08ns
-
- rnti:24
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64564e+08ns
-
- rnti:23
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64564e+08ns
-
- rnti:22
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64564e+08ns
-
- rnti:21
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64564e+08ns
-
- rnti:20
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64564e+08ns
-
- rnti:19
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64564e+08ns
-
- rnti:18
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64564e+08ns
+ Data received at RLC layer at:+1.74064e+08ns
 
  rnti:17
 
  delay :1528568
 
 
- Data received at RLC layer at:+1.64564e+08ns
+ Data received at RLC layer at:+1.74064e+08ns
 
- rnti:25
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64564e+08ns
-
- rnti:26
+ rnti:18
 
  delay :1528568
 
 
- Data received at RLC layer at:+1.64564e+08ns
+ Data received at RLC layer at:+1.74064e+08ns
 
- rnti:27
-
- delay :1528568
-
-
- Data received at RLC layer at:+1.64564e+08ns
-
- rnti:28
+ rnti:19
 
  delay :1528568
 
 
- Data received at RLC layer at:+1.64564e+08ns
+ Data received at RLC layer at:+1.74064e+08ns
 
- rnti:29
+ rnti:20
 
  delay :1528568
 
 
- Data received at RLC layer at:+1.64564e+08ns
+ Data received at RLC layer at:+1.74064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.74064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.74064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.74064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.74064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.74064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.74064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
 
  rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.84064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+1.94064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.04064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.14064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.24064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.34064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.44064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.54064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.64064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.74064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.84064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+2.94064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.04064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.14064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.24064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.34064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.44064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.54064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.64064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.74064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.84064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+3.94064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.04064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.14064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.24064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.34064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.44064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.54064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.64064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.74064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.84064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+4.94064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.04064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.14064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.24064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.34064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.44064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.54064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.64064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.74064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.84064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+5.94064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.04064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.14064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.24064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.34064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.44064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.54064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.64064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.74064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.84064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+6.94064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.04064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.14064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.24064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.34064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.44064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.54064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.64064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.74064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.84064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+7.94064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.04064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.14064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.24064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.34064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.44064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.54064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.64064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.74064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.84064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+8.94064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.04064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.14064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.24064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.34064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.44064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.54064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.64064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.74064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.84064e+08ns
+
+ rnti:1
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:8
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:9
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:10
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:11
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:12
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:13
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:14
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:15
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:16
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:17
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:18
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:19
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:20
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:7
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:6
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:5
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:4
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:3
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:2
+
+ delay :1528568
+
+
+ Data received at RLC layer at:+9.94064e+08ns
+
+ rnti:1
 
  delay :1528568

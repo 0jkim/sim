@@ -22,7 +22,7 @@
 #include <algorithm>
 #include <functional>
 
-namespace ns3  {
+namespace ns3 {
 
 NS_LOG_COMPONENT_DEFINE ("NrMacSchedulerTdmaRR");
 NS_OBJECT_ENSURE_REGISTERED (NrMacSchedulerTdmaRR);
@@ -31,24 +31,23 @@ TypeId
 NrMacSchedulerTdmaRR::GetTypeId (void)
 {
   static TypeId tid = TypeId ("ns3::NrMacSchedulerTdmaRR")
-    .SetParent<NrMacSchedulerTdma> ()
-    .AddConstructor<NrMacSchedulerTdmaRR> ()
-  ;
+                          .SetParent<NrMacSchedulerTdma> ()
+                          .AddConstructor<NrMacSchedulerTdmaRR> ();
   return tid;
 }
 
-NrMacSchedulerTdmaRR::NrMacSchedulerTdmaRR ()
-  : NrMacSchedulerTdma ()
+NrMacSchedulerTdmaRR::NrMacSchedulerTdmaRR () : NrMacSchedulerTdma ()
 {
   NS_LOG_FUNCTION (this);
 }
 
 std::shared_ptr<NrMacSchedulerUeInfo>
-NrMacSchedulerTdmaRR::CreateUeRepresentation (const NrMacCschedSapProvider::CschedUeConfigReqParameters &params) const
+NrMacSchedulerTdmaRR::CreateUeRepresentation (
+    const NrMacCschedSapProvider::CschedUeConfigReqParameters &params) const
 {
   NS_LOG_FUNCTION (this);
-  return std::make_shared <NrMacSchedulerUeInfoRR> (params.m_rnti, params.m_beamConfId,
-                                                        std::bind (&NrMacSchedulerTdmaRR::GetNumRbPerRbg, this));
+  return std::make_shared<NrMacSchedulerUeInfoRR> (
+      params.m_rnti, params.m_beamConfId, std::bind (&NrMacSchedulerTdmaRR::GetNumRbPerRbg, this));
 }
 
 void
@@ -71,15 +70,15 @@ NrMacSchedulerTdmaRR::AssignedUlResources (const UePtrAndBufferReq &ue,
   GetUe (ue)->UpdateUlMetric (m_ulAmc);
 }
 
-std::function<bool(const NrMacSchedulerNs3::UePtrAndBufferReq &lhs,
-                   const NrMacSchedulerNs3::UePtrAndBufferReq &rhs )>
+std::function<bool (const NrMacSchedulerNs3::UePtrAndBufferReq &lhs,
+                    const NrMacSchedulerNs3::UePtrAndBufferReq &rhs)>
 NrMacSchedulerTdmaRR::GetUeCompareDlFn () const
 {
   return NrMacSchedulerUeInfoRR::CompareUeWeightsDl;
 }
 
-std::function<bool(const NrMacSchedulerNs3::UePtrAndBufferReq &lhs,
-                   const NrMacSchedulerNs3::UePtrAndBufferReq &rhs )>
+std::function<bool (const NrMacSchedulerNs3::UePtrAndBufferReq &lhs,
+                    const NrMacSchedulerNs3::UePtrAndBufferReq &rhs)>
 NrMacSchedulerTdmaRR::GetUeCompareUlFn () const
 {
   return NrMacSchedulerUeInfoRR::CompareUeWeightsUl;

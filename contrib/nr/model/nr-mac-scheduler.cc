@@ -31,108 +31,123 @@ class NrMacGeneralCschedSapProvider : public NrMacCschedSapProvider
 {
 public:
   NrMacGeneralCschedSapProvider () = delete;
-  NrMacGeneralCschedSapProvider (NrMacScheduler* scheduler)
-    : m_scheduler (scheduler)
+  NrMacGeneralCschedSapProvider (NrMacScheduler *scheduler) : m_scheduler (scheduler)
   {
   }
 
   ~NrMacGeneralCschedSapProvider () = default;
 
   // inherited from NrMacCschedSapProvider
-  virtual void CschedCellConfigReq (const NrMacCschedSapProvider::CschedCellConfigReqParameters& params)
+  virtual void
+  CschedCellConfigReq (const NrMacCschedSapProvider::CschedCellConfigReqParameters &params)
   {
     m_scheduler->DoCschedCellConfigReq (params);
   }
-  virtual void CschedUeConfigReq (const NrMacCschedSapProvider::CschedUeConfigReqParameters& params)
+  virtual void
+  CschedUeConfigReq (const NrMacCschedSapProvider::CschedUeConfigReqParameters &params)
   {
     m_scheduler->DoCschedUeConfigReq (params);
   }
-  virtual void CschedLcConfigReq (const NrMacCschedSapProvider::CschedLcConfigReqParameters& params)
+  virtual void
+  CschedLcConfigReq (const NrMacCschedSapProvider::CschedLcConfigReqParameters &params)
   {
     m_scheduler->DoCschedLcConfigReq (params);
   }
-  virtual void CschedLcReleaseReq (const NrMacCschedSapProvider::CschedLcReleaseReqParameters& params)
+  virtual void
+  CschedLcReleaseReq (const NrMacCschedSapProvider::CschedLcReleaseReqParameters &params)
   {
     m_scheduler->DoCschedLcReleaseReq (params);
   }
-  virtual void CschedUeReleaseReq (const NrMacCschedSapProvider::CschedUeReleaseReqParameters& params)
+  virtual void
+  CschedUeReleaseReq (const NrMacCschedSapProvider::CschedUeReleaseReqParameters &params)
   {
     m_scheduler->DoCschedUeReleaseReq (params);
   }
 
 private:
-  NrMacScheduler* m_scheduler {nullptr};
+  NrMacScheduler *m_scheduler{nullptr};
 };
 
 class NrMacGeneralSchedSapProvider : public NrMacSchedSapProvider
 {
 public:
   NrMacGeneralSchedSapProvider () = delete;
-  NrMacGeneralSchedSapProvider (NrMacScheduler* sched)
-    : m_scheduler (sched)
+  NrMacGeneralSchedSapProvider (NrMacScheduler *sched) : m_scheduler (sched)
   {
   }
 
-  virtual void SchedDlRlcBufferReq (const NrMacSchedSapProvider::SchedDlRlcBufferReqParameters& params) override
+  virtual void
+  SchedDlRlcBufferReq (const NrMacSchedSapProvider::SchedDlRlcBufferReqParameters &params) override
   {
     m_scheduler->DoSchedDlRlcBufferReq (params);
   }
-  virtual void SchedDlTriggerReq (const NrMacSchedSapProvider::SchedDlTriggerReqParameters& params) override
+  virtual void
+  SchedDlTriggerReq (const NrMacSchedSapProvider::SchedDlTriggerReqParameters &params) override
   {
     m_scheduler->DoSchedDlTriggerReq (params);
   }
-  virtual void SchedUlTriggerReq (const NrMacSchedSapProvider::SchedUlTriggerReqParameters& params) override
+  virtual void
+  SchedUlTriggerReq (const NrMacSchedSapProvider::SchedUlTriggerReqParameters &params) override
   {
     m_scheduler->DoSchedUlTriggerReq (params);
   }
-  virtual void SchedDlCqiInfoReq (const NrMacSchedSapProvider::SchedDlCqiInfoReqParameters& params) override
+  virtual void
+  SchedDlCqiInfoReq (const NrMacSchedSapProvider::SchedDlCqiInfoReqParameters &params) override
   {
     m_scheduler->DoSchedDlCqiInfoReq (params);
   }
-  virtual void SchedUlCqiInfoReq (const NrMacSchedSapProvider::SchedUlCqiInfoReqParameters& params) override
+  virtual void
+  SchedUlCqiInfoReq (const NrMacSchedSapProvider::SchedUlCqiInfoReqParameters &params) override
   {
     m_scheduler->DoSchedUlCqiInfoReq (params);
   }
-  virtual void SchedUlMacCtrlInfoReq (const NrMacSchedSapProvider::SchedUlMacCtrlInfoReqParameters& params) override
+  virtual void
+  SchedUlMacCtrlInfoReq (
+      const NrMacSchedSapProvider::SchedUlMacCtrlInfoReqParameters &params) override
   {
     m_scheduler->DoSchedUlMacCtrlInfoReq (params);
   }
-  virtual void SchedUlSrInfoReq (const SchedUlSrInfoReqParameters &params) override
+  virtual void
+  SchedUlSrInfoReq (const SchedUlSrInfoReqParameters &params) override
   {
     m_scheduler->DoSchedUlSrInfoReq (params);
   }
-  virtual void SchedSetMcs (uint32_t mcs) override
+  virtual void
+  SchedSetMcs (uint32_t mcs) override
   {
     m_scheduler->DoSchedSetMcs (mcs);
   }
-  virtual void SchedDlRachInfoReq (const SchedDlRachInfoReqParameters& params) override
+  virtual void
+  SchedDlRachInfoReq (const SchedDlRachInfoReqParameters &params) override
   {
     m_scheduler->DoSchedDlRachInfoReq (params);
   }
-  virtual uint8_t GetDlCtrlSyms () const override
+  virtual uint8_t
+  GetDlCtrlSyms () const override
   {
     return m_scheduler->GetDlCtrlSyms ();
   }
-  virtual uint8_t GetUlCtrlSyms () const override
+  virtual uint8_t
+  GetUlCtrlSyms () const override
   {
     return m_scheduler->GetUlCtrlSyms ();
   }
 
   //Configured Grant
-  virtual void SchedUlCgrInfoReq (const SchedUlCgrInfoReqParameters &params) override
+  virtual void
+  SchedUlCgrInfoReq (const SchedUlCgrInfoReqParameters &params) override
   {
     m_scheduler->DoSchedUlCgrInfoReq (params);
   }
+
 private:
-  NrMacScheduler* m_scheduler {nullptr};
+  NrMacScheduler *m_scheduler{nullptr};
 };
 
 TypeId
 NrMacScheduler::GetTypeId (void)
 {
-  static TypeId tid = TypeId ("ns3::NrMacScheduler")
-    .SetParent<Object> ()
-  ;
+  static TypeId tid = TypeId ("ns3::NrMacScheduler").SetParent<Object> ();
 
   return tid;
 }
@@ -155,5 +170,3 @@ NrMacScheduler::~NrMacScheduler ()
 }
 
 } // namespace ns3
-
-

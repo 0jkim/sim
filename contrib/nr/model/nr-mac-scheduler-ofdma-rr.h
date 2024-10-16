@@ -66,23 +66,23 @@ protected:
    * \param params parameters
    * \return NrMacSchedulerUeInfoRR instance
    */
-  virtual std::shared_ptr<NrMacSchedulerUeInfo>
-  CreateUeRepresentation (const NrMacCschedSapProvider::CschedUeConfigReqParameters& params) const override;
+  virtual std::shared_ptr<NrMacSchedulerUeInfo> CreateUeRepresentation (
+      const NrMacCschedSapProvider::CschedUeConfigReqParameters &params) const override;
 
   /**
    * \brief Return the comparison function to sort DL UE according to the scheduler policy
    * \return a pointer to NrMacSchedulerUeInfoRR::CompareUeWeightsDl
    */
-  virtual std::function<bool(const NrMacSchedulerNs3::UePtrAndBufferReq &lhs,
-                             const NrMacSchedulerNs3::UePtrAndBufferReq &rhs )>
+  virtual std::function<bool (const NrMacSchedulerNs3::UePtrAndBufferReq &lhs,
+                              const NrMacSchedulerNs3::UePtrAndBufferReq &rhs)>
   GetUeCompareDlFn () const override;
 
   /**
    * \brief Return the comparison function to sort UL UE according to the scheduler policy
    * \return a pointer to NrMacSchedulerUeInfoRR::CompareUeWeightsUl
    */
-  virtual std::function<bool(const NrMacSchedulerNs3::UePtrAndBufferReq &lhs,
-                             const NrMacSchedulerNs3::UePtrAndBufferReq &rhs )>
+  virtual std::function<bool (const NrMacSchedulerNs3::UePtrAndBufferReq &lhs,
+                              const NrMacSchedulerNs3::UePtrAndBufferReq &rhs)>
   GetUeCompareUlFn () const override;
 
   /**
@@ -93,8 +93,7 @@ protected:
    *
    * Update DL metrics by calling NrMacSchedulerUeInfoRR::UpdateDlMetric
    */
-  virtual void AssignedDlResources (const UePtrAndBufferReq &ue,
-                                    const FTResources &assigned,
+  virtual void AssignedDlResources (const UePtrAndBufferReq &ue, const FTResources &assigned,
                                     const FTResources &totAssigned) const override;
 
   /**
@@ -105,21 +104,20 @@ protected:
    *
    * Update DL metrics by calling NrMacSchedulerUeInfoRR::UpdateUlMetric
    */
-  virtual void AssignedUlResources (const UePtrAndBufferReq &ue,
-                                    const FTResources &assigned,
+  virtual void AssignedUlResources (const UePtrAndBufferReq &ue, const FTResources &assigned,
                                     const FTResources &totAssigned) const override;
 
   // RR is a simple scheduler: it doesn't do anything in the next
   // inherited calls.
-  virtual void NotAssignedDlResources (const UePtrAndBufferReq &ue,
-                                       const FTResources &notAssigned,
-                                       const FTResources &totalAssigned) const override
+  virtual void
+  NotAssignedDlResources (const UePtrAndBufferReq &ue, const FTResources &notAssigned,
+                          const FTResources &totalAssigned) const override
   {
   }
 
-  virtual void NotAssignedUlResources (const UePtrAndBufferReq &ue,
-                                       const FTResources &notAssigned,
-                                       const FTResources &totalAssigned) const override
+  virtual void
+  NotAssignedUlResources (const UePtrAndBufferReq &ue, const FTResources &notAssigned,
+                          const FTResources &totalAssigned) const override
   {
   }
 

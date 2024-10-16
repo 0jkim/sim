@@ -80,23 +80,23 @@ protected:
    * \param params parameters
    * \return NrMacSchedulerUeInfoRR instance
    */
-  virtual std::shared_ptr<NrMacSchedulerUeInfo>
-  CreateUeRepresentation (const NrMacCschedSapProvider::CschedUeConfigReqParameters& params) const override;
+  virtual std::shared_ptr<NrMacSchedulerUeInfo> CreateUeRepresentation (
+      const NrMacCschedSapProvider::CschedUeConfigReqParameters &params) const override;
 
   /**
    * \brief Return the comparison function to sort DL UE according to the scheduler policy
    * \return a pointer to NrMacSchedulerUeInfoPF::CompareUeWeightsDl
    */
-  virtual std::function<bool(const NrMacSchedulerNs3::UePtrAndBufferReq &lhs,
-                             const NrMacSchedulerNs3::UePtrAndBufferReq &rhs )>
+  virtual std::function<bool (const NrMacSchedulerNs3::UePtrAndBufferReq &lhs,
+                              const NrMacSchedulerNs3::UePtrAndBufferReq &rhs)>
   GetUeCompareDlFn () const override;
 
   /**
    * \brief Return the comparison function to sort UL UE according to the scheduler policy
    * \return a pointer to NrMacSchedulerUeInfoPF::CompareUeWeightsUl
    */
-  virtual std::function<bool(const NrMacSchedulerNs3::UePtrAndBufferReq &lhs,
-                             const NrMacSchedulerNs3::UePtrAndBufferReq &rhs )>
+  virtual std::function<bool (const NrMacSchedulerNs3::UePtrAndBufferReq &lhs,
+                              const NrMacSchedulerNs3::UePtrAndBufferReq &rhs)>
   GetUeCompareUlFn () const override;
 
   /**
@@ -111,8 +111,7 @@ protected:
    * based on the resources assigned to the user. This will help the sorting
    * function to sort the UEs for resource allocation.
    */
-  virtual void AssignedDlResources (const UePtrAndBufferReq &ue,
-                                    const FTResources &assigned,
+  virtual void AssignedDlResources (const UePtrAndBufferReq &ue, const FTResources &assigned,
                                     const FTResources &totAssigned) const override;
 
   /**
@@ -131,8 +130,7 @@ protected:
    * assigned, the tbSize will be zero. This will help the sorting function to
    * sort the UEs for resource allocation.
    */
-  virtual void NotAssignedDlResources (const UePtrAndBufferReq &ue,
-                                       const FTResources &notAssigned,
+  virtual void NotAssignedDlResources (const UePtrAndBufferReq &ue, const FTResources &notAssigned,
                                        const FTResources &totalAssigned) const override;
 
   /**
@@ -147,8 +145,7 @@ protected:
    * based on the resources assigned to the user. This will help the sorting
    * function to sort the UEs for resource allocation.
    */
-  virtual void AssignedUlResources (const UePtrAndBufferReq &ue,
-                                    const FTResources &assigned,
+  virtual void AssignedUlResources (const UePtrAndBufferReq &ue, const FTResources &assigned,
                                     const FTResources &totAssigned) const override;
 
   /**
@@ -167,8 +164,7 @@ protected:
    * assigned, the tbSize will be zero. This will help the sorting function to
    * sort the UEs for resource allocation.
    */
-  virtual void NotAssignedUlResources (const UePtrAndBufferReq &ue,
-                                       const FTResources &notAssigned,
+  virtual void NotAssignedUlResources (const UePtrAndBufferReq &ue, const FTResources &notAssigned,
                                        const FTResources &totalAssigned) const override;
 
   /**
@@ -179,9 +175,8 @@ protected:
    * Calculates the the potential throughput by calling
    * NrMacSchedulerUeInfoPF::CalculatePotentialTPutDl.
    */
-  virtual void
-  BeforeDlSched (const UePtrAndBufferReq &ue,
-                 const FTResources &assignableInIteration) const override;
+  virtual void BeforeDlSched (const UePtrAndBufferReq &ue,
+                              const FTResources &assignableInIteration) const override;
 
   /**
    * \brief Calculate the potential throughput for the UL based on the available resources
@@ -191,15 +186,13 @@ protected:
    * Calculates the the potential throughput by calling
    * NrMacSchedulerUeInfoPF::CalculatePotentialTPutUl.
    */
-  virtual void
-  BeforeUlSched (const UePtrAndBufferReq &ue,
-                 const FTResources &assignableInIteration) const override;
-
-
+  virtual void BeforeUlSched (const UePtrAndBufferReq &ue,
+                              const FTResources &assignableInIteration) const override;
 
 private:
-  double m_timeWindow {99.0}; //!< Time window to calculate the throughput. Better to make it an attribute.
-  double m_alpha {0.0}; //!< PF Fairness index
+  double m_timeWindow{
+      99.0}; //!< Time window to calculate the throughput. Better to make it an attribute.
+  double m_alpha{0.0}; //!< PF Fairness index
 };
 
 } // namespace ns3

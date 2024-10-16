@@ -52,13 +52,15 @@ public:
    */
   struct SchedDlRlcBufferReqParameters
   {
-    uint16_t  m_rnti;                         //!< The RNTI identifying the UE.
-    uint8_t   m_logicalChannelIdentity;       //!< The logical channel ID, range: 0..10
-    uint32_t  m_rlcTransmissionQueueSize;     //!< The current size of the new transmission queue in byte.
-    uint16_t  m_rlcTransmissionQueueHolDelay; //!< Head of line delay of new transmissions in ms.
-    uint32_t  m_rlcRetransmissionQueueSize;   //!< The current size of the retransmission queue in byte.
-    uint16_t  m_rlcRetransmissionHolDelay;    //!< Head of line delay of retransmissions in ms.
-    uint16_t  m_rlcStatusPduSize;             //!< The current size of the pending STATUS message in byte.
+    uint16_t m_rnti; //!< The RNTI identifying the UE.
+    uint8_t m_logicalChannelIdentity; //!< The logical channel ID, range: 0..10
+    uint32_t
+        m_rlcTransmissionQueueSize; //!< The current size of the new transmission queue in byte.
+    uint16_t m_rlcTransmissionQueueHolDelay; //!< Head of line delay of new transmissions in ms.
+    uint32_t
+        m_rlcRetransmissionQueueSize; //!< The current size of the retransmission queue in byte.
+    uint16_t m_rlcRetransmissionHolDelay; //!< Head of line delay of retransmissions in ms.
+    uint16_t m_rlcStatusPduSize; //!< The current size of the pending STATUS message in byte.
   };
 
   /**
@@ -66,8 +68,8 @@ public:
    */
   struct SchedDlCqiInfoReqParameters
   {
-    SfnSf m_sfnsf;                            //!< SfnSf
-    std::vector <struct DlCqiInfo> m_cqiList; //!< cqi list
+    SfnSf m_sfnsf; //!< SfnSf
+    std::vector<struct DlCqiInfo> m_cqiList; //!< cqi list
   };
 
   /**
@@ -75,8 +77,8 @@ public:
    */
   struct SchedUlMacCtrlInfoReqParameters
   {
-    SfnSf  m_sfnSf;                                 //!< SfnSf
-    std::vector <struct MacCeElement> m_macCeList;  //!< MacCeElement list
+    SfnSf m_sfnSf; //!< SfnSf
+    std::vector<struct MacCeElement> m_macCeList; //!< MacCeElement list
   };
 
   /**
@@ -84,9 +86,9 @@ public:
    */
   struct SchedUlCqiInfoReqParameters
   {
-    SfnSf  m_sfnSf;            //!< SfnSf
-    uint8_t m_symStart;        //!< Sym start of the transmission to which this CQI refers to
-    struct UlCqiInfo m_ulCqi;  //!< UL CQI
+    SfnSf m_sfnSf; //!< SfnSf
+    uint8_t m_symStart; //!< Sym start of the transmission to which this CQI refers to
+    struct UlCqiInfo m_ulCqi; //!< UL CQI
   };
 
   /**
@@ -94,9 +96,9 @@ public:
    */
   struct SchedUlTriggerReqParameters
   {
-    SfnSf m_snfSf;    //!< SfnSf
-    std::vector <struct UlHarqInfo> m_ulHarqInfoList; //!< UL HARQ info list
-    LteNrTddSlotType m_slotType {F}; //!< Indicate the type of slot requested
+    SfnSf m_snfSf; //!< SfnSf
+    std::vector<struct UlHarqInfo> m_ulHarqInfoList; //!< UL HARQ info list
+    LteNrTddSlotType m_slotType{F}; //!< Indicate the type of slot requested
   };
 
   /**
@@ -105,8 +107,8 @@ public:
   struct SchedDlTriggerReqParameters
   {
     SfnSf m_snfSf; //!< SfnSf
-    std::vector <struct DlHarqInfo> m_dlHarqInfoList; //!< DL HARQ info list
-    LteNrTddSlotType m_slotType {F}; //!< Indicate the type of slot requested
+    std::vector<struct DlHarqInfo> m_dlHarqInfoList; //!< DL HARQ info list
+    LteNrTddSlotType m_slotType{F}; //!< Indicate the type of slot requested
   };
 
   /**
@@ -118,8 +120,8 @@ public:
    */
   struct SchedUlSrInfoReqParameters
   {
-    SfnSf m_snfSf;                                 //!< SnfSf in which the sr where received
-    std::vector<uint16_t> m_srList;                //!< List of RNTI which asked for a SR
+    SfnSf m_snfSf; //!< SnfSf in which the sr where received
+    std::vector<uint16_t> m_srList; //!< List of RNTI which asked for a SR
   };
 
   /**
@@ -128,29 +130,29 @@ public:
    */
   struct SchedDlRachInfoReqParameters
   {
-    uint16_t  m_sfnSf; //!< sfn SF
-    std::vector <struct RachListElement_s> m_rachList; //!< RACH list
+    uint16_t m_sfnSf; //!< sfn SF
+    std::vector<struct RachListElement_s> m_rachList; //!< RACH list
 
-    std::vector <struct VendorSpecificListElement_s> m_vendorSpecificList; ///< vendor specific list
+    std::vector<struct VendorSpecificListElement_s> m_vendorSpecificList; ///< vendor specific list
   };
 
-  virtual void SchedDlRlcBufferReq (const struct SchedDlRlcBufferReqParameters& params) = 0;
+  virtual void SchedDlRlcBufferReq (const struct SchedDlRlcBufferReqParameters &params) = 0;
 
-  virtual void SchedDlCqiInfoReq (const SchedDlCqiInfoReqParameters& params) = 0;
+  virtual void SchedDlCqiInfoReq (const SchedDlCqiInfoReqParameters &params) = 0;
 
   /**
    * \brief Starts the DL MAC scheduler for this subframe.
    * \param params      DL HARQ information
    */
-  virtual void SchedDlTriggerReq (const struct SchedDlTriggerReqParameters& params) = 0;
+  virtual void SchedDlTriggerReq (const struct SchedDlTriggerReqParameters &params) = 0;
 
-  virtual void SchedUlCqiInfoReq (const struct SchedUlCqiInfoReqParameters& params) = 0;
+  virtual void SchedUlCqiInfoReq (const struct SchedUlCqiInfoReqParameters &params) = 0;
 
   /**
    * \brief Starts the UL MAC scheduler for this subframe.
    * \param params      UL HARQ information
    */
-  virtual void SchedUlTriggerReq (const struct SchedUlTriggerReqParameters& params) = 0;
+  virtual void SchedUlTriggerReq (const struct SchedUlTriggerReqParameters &params) = 0;
 
   /**
    * \brief Provides scheduling request reception information to the scheduler.
@@ -158,7 +160,7 @@ public:
    */
   virtual void SchedUlSrInfoReq (const SchedUlSrInfoReqParameters &params) = 0;
 
-  virtual void SchedUlMacCtrlInfoReq (const struct SchedUlMacCtrlInfoReqParameters& params) = 0;
+  virtual void SchedUlMacCtrlInfoReq (const struct SchedUlMacCtrlInfoReqParameters &params) = 0;
 
   virtual void SchedSetMcs (uint32_t mcs) = 0;
 
@@ -167,7 +169,7 @@ public:
    *
    * \param params SchedDlRachInfoReqParameters
    */
-  virtual void SchedDlRachInfoReq (const SchedDlRachInfoReqParameters& params) = 0;
+  virtual void SchedDlRachInfoReq (const SchedDlRachInfoReqParameters &params) = 0;
 
   /**
    * \brief Retrieve the number of DL ctrl symbols configured in the scheduler
@@ -184,8 +186,8 @@ public:
   //Configured Grant
   struct SchedUlCgrInfoReqParameters
   {
-    SfnSf m_snfSf;                                 //!< SnfSf in which the sr where received
-    std::vector<uint16_t> m_srList;                //!< List of RNTI which asked for a SR
+    SfnSf m_snfSf; //!< SnfSf in which the sr where received
+    std::vector<uint16_t> m_srList; //!< List of RNTI which asked for a SR
     std::vector<uint32_t> m_bufCgr;
     uint8_t lcid;
     std::vector<uint8_t> m_TraffPCgr;
@@ -219,21 +221,19 @@ public:
      * \brief SchedConfigIndParameters
      * \param sfnSf sfnSf
      */
-    SchedConfigIndParameters (const SfnSf sfnSf)
-      : m_sfnSf (sfnSf),
-        m_slotAllocInfo (sfnSf)
+    SchedConfigIndParameters (const SfnSf sfnSf) : m_sfnSf (sfnSf), m_slotAllocInfo (sfnSf)
     {
     }
-    const SfnSf m_sfnSf;                 //!< The SfnSf
-    SlotAllocInfo m_slotAllocInfo;       //!< The allocation info
-    std::vector <BuildRarListElement_s> m_buildRarList; ///< build rar list
+    const SfnSf m_sfnSf; //!< The SfnSf
+    SlotAllocInfo m_slotAllocInfo; //!< The allocation info
+    std::vector<BuildRarListElement_s> m_buildRarList; ///< build rar list
   };
 
   /**
    * \brief Install a scheduling decision
    * \param params the scheduling decision
    */
-  virtual void SchedConfigInd (const struct SchedConfigIndParameters& params) = 0;
+  virtual void SchedConfigInd (const struct SchedConfigIndParameters &params) = 0;
 
   /**
    * \brief Get the SpectrumModel
@@ -281,7 +281,8 @@ public:
   virtual Time GetTbUlEncodeLatency () const = 0;
 };
 
-std::ostream & operator<< (std::ostream & os, NrMacSchedSapProvider::SchedDlRlcBufferReqParameters const & p);
+std::ostream &operator<< (std::ostream &os,
+                          NrMacSchedSapProvider::SchedDlRlcBufferReqParameters const &p);
 
 } // namespace ns3
 

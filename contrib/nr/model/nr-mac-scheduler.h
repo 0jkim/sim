@@ -56,7 +56,8 @@ public:
    * \brief Set the MacSchedSapUser pointer
    * \param sap pointer to the mac sched sap user class
    */
-  void SetMacSchedSapUser (NrMacSchedSapUser* sap)
+  void
+  SetMacSchedSapUser (NrMacSchedSapUser *sap)
   {
     m_macSchedSapUser = sap;
   }
@@ -65,7 +66,8 @@ public:
    * \brief Get the MacSchedSapProvider pointer
    * \return the pointer to the mac sched sap provider class
    */
-  NrMacSchedSapProvider* GetMacSchedSapProvider ()
+  NrMacSchedSapProvider *
+  GetMacSchedSapProvider ()
   {
     return m_macSchedSapProvider;
   }
@@ -74,7 +76,8 @@ public:
    * \brief SetMacCschedSapUser
    * \param sap the pointer to the sap user
    */
-  void SetMacCschedSapUser (NrMacCschedSapUser* sap)
+  void
+  SetMacCschedSapUser (NrMacCschedSapUser *sap)
   {
     m_macCschedSapUser = sap;
   }
@@ -83,7 +86,8 @@ public:
    * \brief Get the MacCschedSapProvider pointer
    * \return the pointer to the sap provider
    */
-  NrMacCschedSapProvider* GetMacCschedSapProvider ()
+  NrMacCschedSapProvider *
+  GetMacCschedSapProvider ()
   {
     return m_macCschedSapProvider;
   }
@@ -105,7 +109,7 @@ public:
    * \param params Cell configuration
    */
   virtual void
-  DoCschedCellConfigReq (const NrMacCschedSapProvider::CschedCellConfigReqParameters& params) = 0;
+  DoCschedCellConfigReq (const NrMacCschedSapProvider::CschedCellConfigReqParameters &params) = 0;
 
   /**
    * \brief Configure single UE.
@@ -116,7 +120,7 @@ public:
    * \param params UE configuration
    */
   virtual void
-  DoCschedUeConfigReq (const NrMacCschedSapProvider::CschedUeConfigReqParameters& params) = 0;
+  DoCschedUeConfigReq (const NrMacCschedSapProvider::CschedUeConfigReqParameters &params) = 0;
 
   /**
    * \brief Configure UE's logical channel(s).
@@ -127,7 +131,7 @@ public:
    * \param params UE's logical channel configuration
    */
   virtual void
-  DoCschedLcConfigReq (const NrMacCschedSapProvider::CschedLcConfigReqParameters& params) = 0;
+  DoCschedLcConfigReq (const NrMacCschedSapProvider::CschedLcConfigReqParameters &params) = 0;
 
   /**
    * \brief Release UE's logical channel(s).
@@ -138,7 +142,7 @@ public:
    * \param params UE's logical channel(s) to be released
    */
   virtual void
-  DoCschedLcReleaseReq (const NrMacCschedSapProvider::CschedLcReleaseReqParameters& params) = 0;
+  DoCschedLcReleaseReq (const NrMacCschedSapProvider::CschedLcReleaseReqParameters &params) = 0;
 
   /**
    * \brief Release UE.
@@ -150,7 +154,7 @@ public:
    * \param params UE to be released
    */
   virtual void
-  DoCschedUeReleaseReq (const NrMacCschedSapProvider::CschedUeReleaseReqParameters& params) = 0;
+  DoCschedUeReleaseReq (const NrMacCschedSapProvider::CschedUeReleaseReqParameters &params) = 0;
 
   //
   // Implementation of the SCHED API primitives
@@ -167,28 +171,28 @@ public:
    * \param params RLC Buffer status
    */
   virtual void
-  DoSchedDlRlcBufferReq (const NrMacSchedSapProvider::SchedDlRlcBufferReqParameters& params) = 0;
+  DoSchedDlRlcBufferReq (const NrMacSchedSapProvider::SchedDlRlcBufferReqParameters &params) = 0;
 
   /**
    * \brief Provides CQI measurement report information to the scheduler.
    * \param params DL CQI information
    */
   virtual void
-  DoSchedDlCqiInfoReq (const NrMacSchedSapProvider::SchedDlCqiInfoReqParameters& params) = 0;
+  DoSchedDlCqiInfoReq (const NrMacSchedSapProvider::SchedDlCqiInfoReqParameters &params) = 0;
 
   /**
    * \brief Provides UL CQI measurement information to the scheduler.
    * \param params UL CQI information
    */
   virtual void
-  DoSchedUlCqiInfoReq (const NrMacSchedSapProvider::SchedUlCqiInfoReqParameters& params) = 0;
+  DoSchedUlCqiInfoReq (const NrMacSchedSapProvider::SchedUlCqiInfoReqParameters &params) = 0;
 
   /**
    * \brief Provides mac control information (power headroom, ul buffer status) to the scheduler.
    * \param params MAC control information received
    */
-  virtual void
-  DoSchedUlMacCtrlInfoReq (const NrMacSchedSapProvider::SchedUlMacCtrlInfoReqParameters& params) = 0;
+  virtual void DoSchedUlMacCtrlInfoReq (
+      const NrMacSchedSapProvider::SchedUlMacCtrlInfoReqParameters &params) = 0;
 
   /**
    * \brief Request for scheduling a slot in DL
@@ -196,7 +200,7 @@ public:
    * \param params DL HARQ information
    */
   virtual void
-  DoSchedDlTriggerReq (const NrMacSchedSapProvider::SchedDlTriggerReqParameters& params) = 0;
+  DoSchedDlTriggerReq (const NrMacSchedSapProvider::SchedDlTriggerReqParameters &params) = 0;
 
   /**
    * \brief Request for scheduling a slot in UL
@@ -204,7 +208,7 @@ public:
    * \param params UL HARQ information
    */
   virtual void
-  DoSchedUlTriggerReq (const NrMacSchedSapProvider::SchedUlTriggerReqParameters& params) = 0;
+  DoSchedUlTriggerReq (const NrMacSchedSapProvider::SchedUlTriggerReqParameters &params) = 0;
 
   /**
    * \brief One or more UE asked to be scheduled in UL
@@ -217,15 +221,15 @@ public:
    * \brief Forcefully set a default MCS
    * \param mcs MCS
    */
-  virtual void
-  DoSchedSetMcs (uint32_t mcs) = 0;
+  virtual void DoSchedSetMcs (uint32_t mcs) = 0;
 
   /**
    * \brief RACH information
    *
    * \param params SchedDlRachInfoReqParameters
    */
-  virtual void DoSchedDlRachInfoReq (const NrMacSchedSapProvider::SchedDlRachInfoReqParameters& params) = 0;
+  virtual void
+  DoSchedDlRachInfoReq (const NrMacSchedSapProvider::SchedDlRachInfoReqParameters &params) = 0;
 
   /**
    * \brief Retrieve the number of DL ctrl symbols configured in the scheduler
@@ -253,12 +257,11 @@ public:
   virtual void
   DoSchedUlCgrInfoReq (const NrMacSchedSapProvider::SchedUlCgrInfoReqParameters &params) = 0;
 
-
 protected:
-  NrMacSchedSapUser* m_macSchedSapUser           {nullptr};  //!< SAP user
-  NrMacCschedSapUser* m_macCschedSapUser         {nullptr};  //!< SAP User
-  NrMacCschedSapProvider* m_macCschedSapProvider {nullptr};  //!< SAP Provider
-  NrMacSchedSapProvider* m_macSchedSapProvider   {nullptr};  //!< SAP Provider
+  NrMacSchedSapUser *m_macSchedSapUser{nullptr}; //!< SAP user
+  NrMacCschedSapUser *m_macCschedSapUser{nullptr}; //!< SAP User
+  NrMacCschedSapProvider *m_macCschedSapProvider{nullptr}; //!< SAP Provider
+  NrMacSchedSapProvider *m_macSchedSapProvider{nullptr}; //!< SAP Provider
 };
 
 } // namespace ns3
