@@ -43,7 +43,12 @@
 #include "ns3/grid-scenario-helper.h"
 #include "ns3/log.h"
 #include "ns3/antenna-module.h"
+#include "ns3/flow-monitor-module.h"
 #include "ns3/aoi.h" // 0jkim : AoI 클래스 포함
+#include "ns3/aoi-tag.h" // 0jkim : AoITag 클래스 포함
+
+#include <cstdlib>
+#include <ctime>
 
 using namespace ns3;
 
@@ -64,6 +69,7 @@ static bool g_rxRxRlcPDUCallbackCalled = false;
 Time g_txPeriod = Seconds (0.1); // 0jkim : 패킷의 전송 주기 0.1초
 Time delay; // 0jkim : 패킷 전송시 지연 시간 저장
 std::fstream m_ScenarioFile; // 0jkim : 시나리오 파일 스트림
+std::vector<uint64_t> packetCreationTimes;
 
 /*
  * MyModel class. It contains the function that generates the event to send a packet from the UE to the gNB
@@ -112,6 +118,7 @@ private:
   uint32_t m_packetsSent; // 0jkim : 전송된 패킷 개수
   uint8_t m_periodicity; // 0jkim : 주기
   uint32_t m_deadline; // 0jkim : 마감 시간
+  Ptr<UniformRandomVariable> m_random; // 0jkim : 랜덤 변수
 };
 
 MyModel::MyModel () // 0jkim : 생성자
@@ -124,9 +131,9 @@ MyModel::MyModel () // 0jkim : 생성자
       m_running (false),
       m_packetsSent (0),
       m_periodicity (0),
-      m_deadline (0),
-      m_aoi (CreateObject<AoI> ()) // AoI 객체 생성 및 초기화
+      m_deadline (0)
 {
+  m_random = CreateObject<UniformRandomVariable> ();
 }
 
 MyModel::~MyModel () // 0jkim : 소멸자
@@ -211,14 +218,22 @@ StartApplicationUl (Ptr<MyModel> model) // 0jkim : UL 트래픽에 대한 시작
 void
 MyModel::SendPacketUl () // 0jkim : UL 트래픽 패킷 전송 함수
 {
-  std::cout << "createpacketul test\n";
-  Time currentTime = Simulator::Now (); // 0jkim : 현재 시간을 currentTime에 저장
-  Ptr<Packet> pkt = Create<Packet> (m_packetSize, m_periodicity, m_deadline); // 0jkim : 패킷 생성
-  if (m_aoi)
-    {
-      m_aoi->SetPacketCreationTime (currentTime); // 0jkim : AoI 객체에 패킷 생성 시간 설정
-      NS_LOG_INFO ("Packet created at time: " << currentTime.GetSeconds () << "s, AoI updated");
-    }
+  Ptr<Packet> pkt = Create<Packet> (m_packetSize, m_periodicity, m_deadline);
+
+  uint64_t creationTimeNs = Simulator::Now ().GetNanoSeconds ();
+  packetCreationTimes.push_back (creationTimeNs); // 백터에 추가
+
+  // 패킷에 생성 시간 태그 추가
+  PacketCreationTimeTag creationTimeTag (creationTimeNs);
+  pkt->AddPacketTag (creationTimeTag);
+
+  // UE의 ID를 기록하기 위한 태그 추가
+  uint32_t ueId = m_device->GetNode ()->GetId ();
+  PacketUeIdTag ueIdTag (ueId);
+  pkt->AddPacketTag (ueIdTag);
+
+  std::cout << "\n Packet created by UE " << ueId << " at: " << creationTimeNs << " ns"
+            << std::endl;
 
   // 0jkim : IPv4 헤더 설정
   Ipv4Header ipv4Header;
@@ -306,10 +321,10 @@ main (int argc, char *argv[])
   uint8_t period = uint8_t (10); // 0jkim : 주기 설정 10 ms
 
   uint16_t gNbNum = 1; // 0jkim : gNB 개수 설정
-  uint16_t ueNumPergNb = 12; // 0jkim : UE 개수 설정
+  uint16_t ueNumPergNb = 20; // 0jkim : UE 개수 설정
 
   bool enableUl = true; // 0jkim : UL 트래픽 활성화 여부 설정(true)
-  uint32_t nPackets = 1; // 0jkim : 패킷 개수 설정
+  uint32_t nPackets = 1000; // 0jkim : 패킷 개수 설정
   Time sendPacketTime = Seconds (0.2); // 0jkim : 패킷 전송 시간 설정
   uint8_t sch = 1; // 5G-OFDMA 방식
 
